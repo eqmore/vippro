@@ -1,0 +1,17 @@
+.orange{
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    color:#fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #f85415;
+    cursor: pointer;
+    display: inline-block;
+    background:#f85415;
+    margin: 0 30px 0 10px;
+    box-shadow: 0 0px 10px 0px rgba(255,103,26,.2),
+    0 5px 10px 0px rgba(255,103,26,.2)
+}
+

@@ -1,0 +1,207 @@
+
+
+  .left-navbar{
+    width:310px;
+    display: none;
+  }
+  .left-navbar ul{
+    padding-top:75px;
+  }
+  .left-navbar li{
+    padding: 10px;
+    text-align: center;
+    font-size:16px;
+    position: relative;
+  }
+  
+ .left-navbar li:hover{
+    background:#eee;
+    /* width: 100%; */
+  }
+  .left-navbar li a{
+    color:#333;
+  }
+  .left-navbar li a:hover{
+    font-weight: bold;
+  }
+  .left-navbar li.active:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: orange;
+    width:20px;
+    bottom: -1px;
+    left:50%;
+    transform: translateX(-50%);
+  } 
+  .left-navbar .dropdown a{
+    font-size:14px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color:#333;
+  }
+
+
+  .ipad-header{
+    position: fixed;
+    left:0px;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    min-width: 980px;
+  }
+  .ipad-header .btn{
+    margin-left:30px;
+    margin-top:40px;
+    display: inline-block;
+  }
+  .ipad-header .btn i{
+    display:block;
+    width:24px;
+    height: 2px;
+    margin-bottom:6px;
+    background: #333;
+  }
+  .ipad-header .brand{
+    margin:0 30px;
+    line-height: 90px;
+    display: inline-block;
+    height: 90px;
+    vertical-align: top;
+  }
+  .ipad-header img{
+    width: 114px;
+    height: 56px;
+    vertical-align: middle;
+  }
+  .ipad-header .login{
+    position: absolute;
+    top: 0;
+    right: -810px;
+    line-height: 90px;
+  }
+
+  /* pc */
+  .pc-header{
+    min-width: 1024px;
+    height: 90px;
+    line-height: 90px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    white-space: nowrap;
+  }
+  .pc-header .brand{
+    margin: auto 30px;
+  }
+  .pc-header .brand img{
+    width: 114px;
+    height: 54px;
+    vertical-align: middle;
+  }
+  .pc-header ul{
+    display: inline-block;
+  }
+  .pc-header li{
+    position: relative;
+    display: inline-block;
+    margin: auto 15px;
+  }
+  .pc-header li.active:before{
+    content:"";
+    display: block;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 20px;
+  }
+  .pc-header a{
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    color:#333;
+    text-align: center;
+    font-size: 15px;
+
+  }
+  .pc-header li a:hover{
+    font-weight: bold;
+  }
+  .pc-header li:hover{
+    color:#000;
+  }
+ 
+  .pc-header .login{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 90px;
+  }
+  .pc-header .lesson{
+    position: relative;
+  }
+  .pc-header .drop{
+    position: absolute;
+    width: 168px;
+    height: 140px;
+    left:50%;
+    top: 80px;
+    margin-left: -84px;
+    padding:10px 0;
+    background: #fff;
+
+  }
+
+
+  .pc-header .drop li{
+    display:block;
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    line-height: 20px;
+    margin: auto 0;
+    text-align: center;
+
+  }
+  .pc-header .drop a{
+    font-size: 12px;
+    /* width: 100%; */
+    color:#333;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+  }
+  .pc-header .drop a:hover{
+    color:orange;
+  }
+  .pc-header .drop a:active{
+    font-weight: 800;
+  }
+
+
+  @media screen and (min-width:1080px){
+    .pc-header{
+      display:block;
+    }
+    .ipad-header{
+      display:none;
+    }
+  }
+  @media screen and (max-width:1080px){
+    .ipad-header{
+      display:block;
+    }
+    .pc-header{
+      display:none;
+    }
+  }
+ 

@@ -1,0 +1,27 @@
+
+@media (max-width:1080px){
+  .ipad{
+    display:block;
+  }
+  .pc{
+    display:none;
+  }
+}
+@media (min-width:1080px){
+  .pc{
+    display:block;
+  }
+  .ipad{
+    display:none;
+  }
+}
+.home .pc{
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+.home .ipad{
+  width: 200px;
+  height: 200px;
+  background: green;
+}

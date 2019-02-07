@@ -1,0 +1,690 @@
+@import 'reset.css';
+.ovh {
+  overflow: hidden;
+  display: block;
+}
+/**- public -**/
+ul {
+  *zoom: 1;
+  clear: both;
+}
+ul:before,
+ul:after {
+  display: table;
+  content: "";
+}
+ul:after {
+  clear: both;
+}
+.common-title {
+  text-align: center;
+  padding-top: 75px;
+  width: 100%;
+  color: #333;
+  font-size: 36px;
+  font-weight: 400;
+}
+.common-title i {
+  display: block;
+  border-bottom: 4px solid #f85415;
+  width: 36px;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.fixsec {
+  z-index: 1;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 65px;
+  height: 220px;
+}
+.fixsec ul li {
+  width: 100%;
+  text-align: center;
+  padding-top: 17px;
+}
+.fixsec ul li img {
+  width: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectwo ul {
+  padding: 20px 15px;
+}
+.sectwo ul li {
+  padding: 0 15px;
+  float: left;
+  list-style-type: none;
+  position: relative;
+}
+.sectwo ul li img {
+  width: 51px;
+}
+.sectwo ul li h4 {
+  font-size: 32px;
+}
+.sectwo ul li p {
+  padding-top: 18px;
+  line-height: 26px;
+}
+.sectwo .card {
+  width: 100%;
+}
+.sectwo .mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.secthree .container-box {
+  position: relative;
+  background: #f3f3f3;
+}
+.secthree .container-box .map-bg {
+  position: absolute;
+  bottom: 0;
+  width: 86%;
+}
+.secthree .container-box ul {
+  *zoom: 1;
+  clear: both;
+}
+.secthree .container-box ul:before,
+.secthree .container-box ul:after {
+  display: table;
+  content: "";
+}
+.secthree .container-box ul:after {
+  clear: both;
+}
+.secthree .container-box ul li {
+  float: left;
+}
+.secthree .container-box ul li .con-box {
+  position: relative;
+  width: 100%;
+  height: 210px;
+}
+.secthree .container-box ul li .con-box .con {
+  font-size: 52px;
+  text-align: center;
+}
+.secthree .container-box ul li .con-box .con span {
+  font-size: 22px;
+}
+.secthree .container-box ul li .con-box .con p {
+  text-align: center;
+  font-size: 16px;
+}
+.secthree .container-box ul li .con-box .hover-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.secthree .container-box ul li .con-box .hover-box .icon {
+  bottom: -37px;
+  position: absolute;
+  left: 50%;
+  width: 74px;
+  height: 74px;
+  transform: translate(-50%);
+  border-radius: 37px;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  -o-border-radius: 37px;
+  background: #ffc616;
+}
+.secthree .container-box ul li .con-box .hover-box .icon img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.secthree .container-box .tips {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+.secthree .container-box .obt-btn {
+  text-align: center;
+  font-size: 24px;
+  background: #f85415;
+  color: #fff;
+  width: 240px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.secfour ul {
+  *zoom: 1;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+.secfour ul:before,
+.secfour ul:after {
+  display: table;
+  content: "";
+}
+.secfour ul:after {
+  clear: both;
+}
+.secfour ul li {
+  float: left;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.secfour ul li .con a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.secfour ul li .con a .w100 {
+  width: 100%;
+}
+.secfour ul li .con a .text {
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 20px;
+  line-height: 20px;
+  height: 80px;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+}
+.secfour ul li .con a .text img {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 28px;
+}
+.secfive .main-con {
+  background: rgba(0, 0, 0, 0.6);
+}
+.secfive .main-con ul {
+  padding-top: 110px;
+  padding-bottom: 115px;
+  *zoom: 1;
+  clear: both;
+}
+.secfive .main-con ul:before,
+.secfive .main-con ul:after {
+  display: table;
+  content: "";
+}
+.secfive .main-con ul:after {
+  clear: both;
+}
+.secfive .main-con ul li {
+  float: left;
+  display: block;
+  color: #ffc616;
+}
+.secfive .main-con ul li .num {
+  font-size: 52px;
+}
+.secfive .main-con ul li .num span {
+  font-size: 22px;
+}
+.secfive .main-con ul li p {
+  font-size: 26px;
+}
+.secfive .main-con .register {
+  text-align: center;
+}
+.secfive .main-con .register .play-btn {
+  display: inline-block;
+  width: 190px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -o-border-radius: 24px;
+  border: 1px solid #fff;
+}
+.secfive .main-con .register .play-btn:hover {
+  background: #f85415;
+  border: none;
+}
+.secsix ul {
+  *zoom: 1;
+  clear: both;
+}
+.secsix ul:before,
+.secsix ul:after {
+  display: table;
+  content: "";
+}
+.secsix ul:after {
+  clear: both;
+}
+.secsix ul li {
+  float: left;
+  display: block;
+}
+.secsix ul li .hover-con {
+  width: 100%;
+  height: 330px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding-top: 30px;
+  text-align: center;
+}
+.secsix ul li .hover-con img {
+  width: 168px;
+  height: 168px;
+  margin-bottom: 5px;
+}
+.secsix ul li .hover-con p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.secsix ul li .hover-con .detail {
+  font-size: 14px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #999;
+}
+.secsix ul li .hover-con:hover {
+  box-shadow: 1px 1px 1px #999;
+}
+.secsix .register {
+  padding-top: 40px;
+  width: 100%;
+}
+.secsix .register .obt-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 52px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  color: #fff;
+  background: #f85415;
+  line-height: 52px;
+  font-size: 24px;
+  text-align: center;
+}
+.secseven {
+  position: relative;
+}
+.secseven .map-bg {
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+}
+.secseven .person-img {
+  position: absolute;
+  bottom: 0;
+  width: 48%;
+  float: left;
+  display: block;
+  height: 668px;
+}
+.secseven .person-img img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+}
+.secseven ul {
+  padding: 80px 15px 60px;
+}
+.secseven ul li {
+  float: left;
+  display: block;
+  min-height: 1px;
+}
+.secseven ul li img {
+  float: left;
+  display: block;
+  width: 51px;
+  position: absolute;
+}
+.secseven ul li .promise-con dl {
+  padding-left: 60px;
+  padding-bottom: 30px;
+  *zoom: 1;
+  clear: both;
+}
+.secseven ul li .promise-con dl:before,
+.secseven ul li .promise-con dl:after {
+  display: table;
+  content: "";
+}
+.secseven ul li .promise-con dl:after {
+  clear: both;
+}
+.secseven ul li .promise-con dl dt {
+  float: left;
+  display: block;
+}
+.secseven ul li .promise-con dl dt img {
+  width: 60px;
+  height: 63px;
+  position: relative;
+}
+.secseven ul li .promise-con dl dd {
+  float: left;
+  display: block;
+}
+.secseven ul li .promise-con dl dd h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.secseven ul li .promise-con dl dd p {
+  font-size: 14px;
+  color: #999;
+  padding-top: 7px;
+}
+.secseven ul li .promise-con dl dd p a {
+  color: #f85415;
+}
+.seceight ul {
+  *zoom: 1;
+  clear: both;
+}
+.seceight ul:before,
+.seceight ul:after {
+  display: table;
+  content: "";
+}
+.seceight ul:after {
+  clear: both;
+}
+.seceight ul li {
+  float: left;
+  display: block;
+}
+.seceight ul li .icon-box {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  border: 1px dashed #838383;
+  border-radius: 77px;
+  -webkit-border-radius: 77px;
+  -moz-border-radius: 77px;
+  -o-border-radius: 77px;
+}
+.seceight ul li .icon-box .num {
+  position: absolute;
+  right: -63px;
+  top: -61px;
+  width: 100px;
+  height: 140px;
+}
+.seceight ul li .icon-box .icon {
+  margin: 43px auto 0;
+  width: 68px;
+  height: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seceight ul li .icon-box .icon img {
+  width: 100%;
+}
+.seceight ul li .detail h5 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+.seceight ul li .detail p {
+  font-size: 14px;
+  color: #999;
+  padding-top: 9px;
+}
+.seceight .register {
+  padding-top: 40px;
+  width: 100%;
+}
+.seceight .register .obt-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 52px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  color: #fff;
+  background: #f85415;
+  line-height: 52px;
+  font-size: 24px;
+  text-align: center;
+}
+.secnine ul {
+  *zoom: 1;
+  clear: both;
+  padding-bottom: 80px;
+}
+.secnine ul:before,
+.secnine ul:after {
+  display: table;
+  content: "";
+}
+.secnine ul:after {
+  clear: both;
+}
+.secnine ul li {
+  float: left;
+  display: block;
+}
+.secnine ul li img {
+  width: 100%;
+}
+.secten ul {
+  *zoom: 1;
+  clear: both;
+  padding: 0 30px;
+}
+.secten ul:before,
+.secten ul:after {
+  display: table;
+  content: "";
+}
+.secten ul:after {
+  clear: both;
+}
+.secten ul li {
+  float: left;
+  display: block;
+  padding-top: 80px;
+}
+.secten ul li img {
+  width: 266px;
+}
+.bottom-second-info {
+  width: 100%;
+  *zoom: 1;
+  clear: both;
+  background: #333;
+  color: #999;
+}
+.bottom-second-info:before,
+.bottom-second-info:after {
+  display: table;
+  content: "";
+}
+.bottom-second-info:after {
+  clear: both;
+}
+.bottom-second-info .title {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.bottom-second-info .title i {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 28px;
+  height: 3px;
+  background: #f85415;
+}
+.bottom-second-info .info {
+  padding: 0 30px;
+}
+.bottom-second-info .consultant {
+  float: left;
+  display: block;
+  width: 270px;
+}
+.bottom-second-info .consultant h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.bottom-second-info .consultant h2 img {
+  width: 36px;
+  padding-right: 10px;
+}
+.bottom-second-info .consultant span {
+  font-size: 14px;
+  color: #999;
+}
+.bottom-second-info .consultant .register .btn {
+  line-height: 40px;
+  font-size: 16px;
+  height: 52px;
+  width: 120px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  background: #f85415;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom-second-info .company {
+  float: left;
+  display: block;
+  width: 150px;
+}
+.bottom-second-info .company div p a {
+  font-size: 14px;
+  line-height: 28px;
+  color: #999;
+}
+.bottom-second-info .company div p a:hover {
+  color: #fff;
+}
+.bottom-second-info .product {
+  float: left;
+  display: block;
+  width: 245px;
+  padding-top: 55px;
+}
+.bottom-second-info .product div p a {
+  font-size: 14px;
+  color: #999;
+}
+.bottom-second-info .product div p a:hover {
+  color: #fff;
+}
+.bottom-second-info .our {
+  float: right;
+  display: block;
+}
+.bottom-second-info .our ul {
+  *zoom: 1;
+  clear: both;
+}
+.bottom-second-info .our ul:before,
+.bottom-second-info .our ul:after {
+  display: table;
+  content: "";
+}
+.bottom-second-info .our ul:after {
+  clear: both;
+}
+.bottom-second-info .our ul li {
+  float: left;
+  display: block;
+  margin-right: 15px;
+}
+.bottom-second-info .our ul li img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.bottom-second-info .our ul li p {
+  font-size: 14px;
+}
+.footer {
+  *zoom: 1;
+  clear: both;
+}
+.footer:before,
+.footer:after {
+  display: table;
+  content: "";
+}
+.footer:after {
+  clear: both;
+}
+.footer .auth {
+  float: left;
+  display: block;
+  width: 344px;
+  padding-right: 10px;
+  height: 70px;
+  *zoom: 1;
+  clear: both;
+}
+.footer .auth:before,
+.footer .auth:after {
+  display: table;
+  content: "";
+}
+.footer .auth:after {
+  clear: both;
+}
+.footer .auth li {
+  float: left;
+  display: block;
+}
+.footer .auth li img {
+  width: 50px;
+}
+.footer .cop {
+  float: left;
+  display: block;
+}
+.footer .china {
+  float: left;
+  display: block;
+  width: 100px;
+}

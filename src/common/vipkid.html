@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+   
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                            <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/header/img/vipkidHeader_52ec2f20.png" width="114" height="56" alt="">
+                        </a>
+                    <button class="navbar-toggler navbar-left" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar NavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="vipkid.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">北美师资</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vipclasslist.html">公开课</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            课程体系
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">vipkid mc</a>
+                            <a class="dropdown-item" href="#">vipkid 全项</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        <div class="fixsec">
+            <ul>
+                <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAP1BMVEVMaXH/aCb/ZSL/ZSP/ZyL/ZSL/ZCL/ZSX/bCr/ZSL/ZSL/aCT/ZCL/ZSP/ij7/ZCL/ZSP/ZSL/ZCL/ZST/ZCIoaWiYAAAAFHRSTlMAGvmGNOLuQwy0mimoXQTNc8DZUnZjs04AAAGvSURBVFjD7VdJkoMwDMT7BtgE/f+tkyKbTbzIpuaWPuFUpZFkdUtM0w8/DIEs1nhBqfDG7mSEwTEPCW6sl8fNkIFRPXkYKMCgo9klFEHDiqFYLVRhNIJjgwZ8M6V1hiZEi8UCAr6e0QIozDUOLXEksFxN5ihLOSEe3yTX3JTPrEjCov8cP5jimRZDER8SfgrtfIa9wKGi6B8v0sVz8YKibNqRyIKG4oZv1eTecTaotVqS5u08w7FfDoPttFQCJxoKQ0iNSo6RgIyDuQ2SAI2kZGAYS7ZPemNROf1114VkG6UT9kUSLpA8hYEyNqG0EpnnlzBQoahI7SpR/tthVt8i0ZEh6NQc3tfs5HAkkcMoOloT2LonT44/nl90tGuTwTGoZln02g7cEpJBS0j83122g082dOvTYzpDHl07u/sCqAKbjbEBc2HJdCaHmlzvtkDJac8x/LzWtkMJ6aLDVH3C5ufGdH2nlKglmVSbR3Lkql65cOnQC38xI+Hwnw0raxk97gPGNI0EA25zPuE6WSa9s+0gEt4uLsjvRsNTkafctKWJuw7iXigxXYdy0w//iz9ZxKaAHMUJTAAAAABJRU5ErkJggg==" alt="">
+                    <p>服务号</p>
+                </li>
+                <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAP1BMVEVMaXH/aCb/ZSL/ZSP/ZyL/ZSL/ZCL/ZSX/bCr/ZSL/ZSL/aCT/ZCL/ZSP/ij7/ZCL/ZSP/ZSL/ZCL/ZST/ZCIoaWiYAAAAFHRSTlMAGvmGNOLuQwy0mimoXQTNc8DZUnZjs04AAAGvSURBVFjD7VdJkoMwDMT7BtgE/f+tkyKbTbzIpuaWPuFUpZFkdUtM0w8/DIEs1nhBqfDG7mSEwTEPCW6sl8fNkIFRPXkYKMCgo9klFEHDiqFYLVRhNIJjgwZ8M6V1hiZEi8UCAr6e0QIozDUOLXEksFxN5ihLOSEe3yTX3JTPrEjCov8cP5jimRZDER8SfgrtfIa9wKGi6B8v0sVz8YKibNqRyIKG4oZv1eTecTaotVqS5u08w7FfDoPttFQCJxoKQ0iNSo6RgIyDuQ2SAI2kZGAYS7ZPemNROf1114VkG6UT9kUSLpA8hYEyNqG0EpnnlzBQoahI7SpR/tthVt8i0ZEh6NQc3tfs5HAkkcMoOloT2LonT44/nl90tGuTwTGoZln02g7cEpJBS0j83122g082dOvTYzpDHl07u/sCqAKbjbEBc2HJdCaHmlzvtkDJac8x/LzWtkMJ6aLDVH3C5ufGdH2nlKglmVSbR3Lkql65cOnQC38xI+Hwnw0raxk97gPGNI0EA25zPuE6WSa9s+0gEt4uLsjvRsNTkafctKWJuw7iXigxXYdy0w//iz9ZxKaAHMUJTAAAAABJRU5ErkJggg==" alt="">
+                    <p>服务号</p>
+                </li>
+                <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAP1BMVEVMaXH/aCb/ZSL/ZSP/ZyL/ZSL/ZCL/ZSX/bCr/ZSL/ZSL/aCT/ZCL/ZSP/ij7/ZCL/ZSP/ZSL/ZCL/ZST/ZCIoaWiYAAAAFHRSTlMAGvmGNOLuQwy0mimoXQTNc8DZUnZjs04AAAGvSURBVFjD7VdJkoMwDMT7BtgE/f+tkyKbTbzIpuaWPuFUpZFkdUtM0w8/DIEs1nhBqfDG7mSEwTEPCW6sl8fNkIFRPXkYKMCgo9klFEHDiqFYLVRhNIJjgwZ8M6V1hiZEi8UCAr6e0QIozDUOLXEksFxN5ihLOSEe3yTX3JTPrEjCov8cP5jimRZDER8SfgrtfIa9wKGi6B8v0sVz8YKibNqRyIKG4oZv1eTecTaotVqS5u08w7FfDoPttFQCJxoKQ0iNSo6RgIyDuQ2SAI2kZGAYS7ZPemNROf1114VkG6UT9kUSLpA8hYEyNqG0EpnnlzBQoahI7SpR/tthVt8i0ZEh6NQc3tfs5HAkkcMoOloT2LonT44/nl90tGuTwTGoZln02g7cEpJBS0j83122g082dOvTYzpDHl07u/sCqAKbjbEBc2HJdCaHmlzvtkDJac8x/LzWtkMJ6aLDVH3C5ufGdH2nlKglmVSbR3Lkql65cOnQC38xI+Hwnw0raxk97gPGNI0EA25zPuE6WSa9s+0gEt4uLsjvRsNTkafctKWJuw7iXigxXYdy0w//iz9ZxKaAHMUJTAAAAABJRU5ErkJggg==" alt="">
+                    <p>服务号</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner1_81ac8067.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner3_7c3ecb3c.png" alt="Second slide">
+              </div>
+            </div>
+            
+        </div>
+
+
+        <div class="container sectwo ">
+            <ul>
+                <li class="col-6">
+                    <img class="card" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section02/section2_79ed7d51.png" alt="">
+                    <div class="mask">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAWlBMVEVMaXH7+/v7+/v9/f37+/v7+/v////7+/v7+/v////////6+vr7+/v7+/v8/Pz7+/v8/Pz8/Pz6+vr7+/v6+vr4VBX5pob4YSf5xK/5dkP62s766eL5iFz68/CriXpqAAAAFHRSTlMApkUyxIUH+eokFdq4mE2yYF3SdJ9z9zMAAANWSURBVHjazVzZkuIwDMxhxw65IMgMzAz//5v7AMNSXIllKel+T1WX3ZFkXVmWgKru913emrHxzvlmNG3e7fu6ylZAVdihcfQSrhlsUS1LxrzhcsfKLESq2rWTZG6k2p02pyKfzebKKS/02NTWEwPe1jp0Yg/n/pjkKZU5JSEvZekMlIxBjtKmIxF0Gxk+W09C8FuJ2zIkCJN8b9aRKJxNU48hcZgEJRWeFOC5truypARboVxXyrXVDSmiifYlpSdV+BKLTyyj3pE6XI/FJ4ZRuQgfIlei6CdOR/VifIj8jL9/09CCaCYtZGVoUZgpL2JpYUyEIwUtjo++f+OXJ+Q/ycjQCjBAApqQ0VIWerbFNrQS3lzallbDFuUP+/indbQiuheKplXxrOthXUID2AE9H1G+NqH8ISqj1VFjHdDDEdVufUKuXt+rvvexHoGQXzVO/Bw78iT9fTgczyqyrliSPoQQwtdRUtZ/L5Ad5+tjuOD3R47R7kqo5Xx8uhIKXwcxQm3KjYX/OH3L3hnvHwv3OJwl/zObTkhK3DYhtg8PEBG34UvoiZCIuF3FN9PhGQLiLviONbxCsrgtP5h+SShZ3EOWZY0koVRxN2xNvyWUJm5XsaPp8B4p4q6zXp5Qirj7bK9BiC/uPftJHybAFHfHfgBNEWKKO+cFQ3MI8cTdstNmYQ7ixW2yUZNQOMUqaeQa6pmEwm+0qfa6hELkEfnMKROKFLZTJ/QTS8hjacgri/p0jhb1iGWHRk3DyLHURs918HxZq+Zcmd4+Vwo/2PFQpxOg8SPGvUYImxJT9/JBftqTuhZ/BqW9y1wl/FBMfbk2wk/p5Lf9IJpsEMh+WMF0jEjys5BLWIlk0C5ZT4mUnlCO0UglPaWysFYmLSyWp76mhXki0sjk/xU7WCGRRq2jTSm+KFSDbsUX5o8vXi+7lacQatKXaBG2xAlXBMYrk8M1EsC1WuA1o8C16+A1NMG1fOE1xcG1DeI1VsK1nuI15+K1L8M1eOO1wOMNCcCNUeANmuCN4sANK+GNc+ENvOGNBOINTeKNleIN3uKNJuMNb+ONt+MtAMBbkQC4RAJvzQbgIhK8VS2Ay2zw1v0ALkQCXBkFuFQLcO0Y4mI2wNV1iMv9VNcf/gNxM/adlUVHuwAAAABJRU5ErkJggg==">    
+                    </div>
+                    <div class="mask">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAV1BMVEVMaXH5VRX6Vxf5VRb5VRX5VRb/aCP5VRX5VRX5Vhj9VRr7VRb4VRX5VBX7Vhf/XBz6VRX4Vhf4Vhb4VBX////8uqH92Mr6imD5dUH4ZS37n3v+9/T+7OWDZsHpAAAAE3RSTlMA7CydxIUH/LL5IEXj1jcSXk10bzb2/wAAA2tJREFUeNrlXNmS4yAMBHPaxkkcEc+1//+d+zBHzU4yiS2E6artL+iCRheSlCqAH+azidFOSfe9TpON0ZznwasG8KOLU6CbCFN0o9+XjP2FyzdWdidS/hR7Wok+nmpzGs1qNh+czFiPzeASMZDcUIVOZwIxEUwnTyey6RARhShL6RCpGPEgRudoAgkgmKMMn5MmIeiThHgsCcIWS8kFEkVwZZbHkjhsgVUaNVWA5tpu76gSHMvDHS1Vg2UYgGGiipg2C6lLVBVp4/s/aKoMvcmTzD1VRz9v4BNoB4TVjA497YJ+5a11mnaCXqXsIdFuSCte/3GiHTE9tJDe0q6wj7yIo53xIBwZaXfc9f2D3p+QvidsSw1ggQT0QEZdaEModEgXdufSTtQMN/O1o25HSN8y2IYawtyIOUJLQuE6EonUFPHqyVNjdFgHdHVEXWhN6Id1NNQc/zy0IbQnFIb2XvV3H5sQCKWmceL92JEn6efXy1OoImvPylQvOef850kyk/UlccdTfsflRT4KYVnp5YNQfnuVtta8G3vLX1ieZe+M98byd1x6yXfmyglJidsVxPb5B0TEbZVSygcRQiLiDp5vpvM1BMQ98h1rvoVicTt+rHiTULG4o1JqkiRUKu6JrelfCZWJO3g1kDChMnEPapYnVCLuWZ1rEOKL+8zON/IDMMVt2BniI0JMccd6hHjijuyyWV6D7eK2XLu4jlBeXjZbxlSVUL5sNIxJ6bqE8sYj0qqvTGijsPvqhF62EtJQGiJdWdTL1gtIdZ/9djs01TSMHEtt/x9ftvC8fawUfrDjIVMnQONHjOcaIWxJTD3LB/llKfUgngYtRXlZ8MKJYmnmOgmn0sW5fRQtNghUP5xgOUak+DnKFawWiQpa8FIlPaEao5UqekpVYV1BWbhGnfqjLMwrnNeo5H9+drAs0aukmL9ZIX7Th/xv0NfnC+/O5P/Lvr6nEP6k34Mz2C9OuE9gvG9yuEYCuFYLvGYUuHYdvIYmuJYvvKY4uLZBvMZKuNZTvOZcvPZluAZvvBZ4vCEBuDEKvEETvFEcuGElvHEuvIE3vJFAvKFJvLFSvMFbvNFkvOFtvPF2vAUAeCsSAJdI4K3ZAFxEgreqBXCZDd66H8CFSIArowCXagGuHUNczAa4ug5xuV/V9Yd/ATI3t6mq9tm3AAAAAElFTkSuQmCC"
+                        data-video="https://image.vipkid.com.cn/market/file/1539597232057-video-liutao.mp4"
+                        >
+                    </div>
+                </li>
+                <li class="col-6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABgCAMAAADYWPdNAAAAOVBMVEVMaXH/xxb/yBf/zBv/yBf/xxb/2Sj/xxf/yBj/xxb/xxb/xxb/yBj/xxb/yBj/yBf/xxf/xxb/xhbTG17wAAAAEnRSTlMA3VQWh/UHpCC7zOoyfUNmc68ZUEmRAAACG0lEQVRo3u2Y23aEMAhFE3M1GUfl/z+2Y6ftqhXiCa8Nz7A2gROCGtM253ejtak8MEfnA9GkhRAVxDEuLwiRjQrIoxyhtALpWHrb0g1x6Su0uhvPPNO3hdxJWcNPrIc9ifpU8CvBl7VU4E6eRE/dUQ6bG/2zZ0qHCmL6EyoL9U8+h21owcoltAopXvI5VOAwGVcm1mOn/rSEUJ6BjWWEGmfiDVDBxFMYFYgUKrcqmKTQiwriLrreqkCoGCfUJFPuVPAIjdjzuFoanmSbU93VVoYnsT1bkPZzEEsjNp2kluWE7HojgIRCjJET8lEtskupxcbU2ysjNyZFVCnz/ZyRrkG4NrRAWuwqmc2wK0CJVqA42BVZAzaYIvUfoQj9t9xcrvrpz2dYM3xu6GkWMpzgJgZoNV3xOkyqyf82i7bfmBl789hXBn9qHeuKbfPszNxx4WOHiQHPsChXDKmrfIZOfxi+Zk9ckuDWXPEMuTFuwY8l9Ga+LKALKThoHJ4RWLMdrxnXmhD1rdlwsSSMksHFXLo14Dc6d2ukb/SAZ4QoIOEHD0Z/OTd8xBYQU3CNrnoF9NTbKzeNYzx31DvphZY76r2rXzR2fqSONmb9tUkdKwP2E4BVj+8YS1GPWXAMeju3jq2L0X41+lkj/Q7UP50sZsIxYb7aAt7swsQ6HoMuxR6MzQMzMAMzMAMzMAMzMAMzMAMzMAMzMAPznzEf0dmBZdeyRzwAAAAASUVORK5CYII=" alt="">
+                    <h4>刘涛倾力推荐</h4>
+                    <p>VIPKID严选北美好外教，让孩子口音更纯正，用孩子喜欢的方式，激发更多自信表达，每时每刻关注成长，学会更多拥有更多，让世界没有边界</p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li class="col-6">
+                    <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABgCAMAAADYWPdNAAAAOVBMVEVMaXH/xxb/yBf/zBv/yBf/xxb/2Sj/xxf/yBj/xxb/xxb/xxb/yBj/xxb/yBj/yBf/xxf/xxb/xhbTG17wAAAAEnRSTlMA3VQWh/UHpCC7zOoyfUNmc68ZUEmRAAACG0lEQVRo3u2Y23aEMAhFE3M1GUfl/z+2Y6ftqhXiCa8Nz7A2gROCGtM253ejtak8MEfnA9GkhRAVxDEuLwiRjQrIoxyhtALpWHrb0g1x6Su0uhvPPNO3hdxJWcNPrIc9ifpU8CvBl7VU4E6eRE/dUQ6bG/2zZ0qHCmL6EyoL9U8+h21owcoltAopXvI5VOAwGVcm1mOn/rSEUJ6BjWWEGmfiDVDBxFMYFYgUKrcqmKTQiwriLrreqkCoGCfUJFPuVPAIjdjzuFoanmSbU93VVoYnsT1bkPZzEEsjNp2kluWE7HojgIRCjJET8lEtskupxcbU2ysjNyZFVCnz/ZyRrkG4NrRAWuwqmc2wK0CJVqA42BVZAzaYIvUfoQj9t9xcrvrpz2dYM3xu6GkWMpzgJgZoNV3xOkyqyf82i7bfmBl789hXBn9qHeuKbfPszNxx4WOHiQHPsChXDKmrfIZOfxi+Zk9ckuDWXPEMuTFuwY8l9Ga+LKALKThoHJ4RWLMdrxnXmhD1rdlwsSSMksHFXLo14Dc6d2ukb/SAZ4QoIOEHD0Z/OTd8xBYQU3CNrnoF9NTbKzeNYzx31DvphZY76r2rXzR2fqSONmb9tUkdKwP2E4BVj+8YS1GPWXAMeju3jq2L0X41+lkj/Q7UP50sZsIxYb7aAt7swsQ6HoMuxR6MzQMzMAMzMAMzMAMzMAMzMAMzMAMzMAPznzEf0dmBZdeyRzwAAAAASUVORK5CYII=" alt="">
+                    <h4>纯北美优质外教</h4>
+                    <p>爱孩子、懂教育，让孩子拥有更多选择，激发孩子的探索欲，打造个性化学习，让孩子爱上英语</p>
+                </li>
+                <li class="col-6">
+                    <img class="card" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section02/section1_2cdacbd7.png"/>
+                    <div class="mask">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAWlBMVEVMaXH7+/v7+/v9/f37+/v7+/v////7+/v7+/v////////6+vr7+/v7+/v8/Pz7+/v8/Pz8/Pz6+vr7+/v6+vr4VBX5pob4YSf5xK/5dkP62s766eL5iFz68/CriXpqAAAAFHRSTlMApkUyxIUH+eokFdq4mE2yYF3SdJ9z9zMAAANWSURBVHjazVzZkuIwDMxhxw65IMgMzAz//5v7AMNSXIllKel+T1WX3ZFkXVmWgKru913emrHxzvlmNG3e7fu6ylZAVdihcfQSrhlsUS1LxrzhcsfKLESq2rWTZG6k2p02pyKfzebKKS/02NTWEwPe1jp0Yg/n/pjkKZU5JSEvZekMlIxBjtKmIxF0Gxk+W09C8FuJ2zIkCJN8b9aRKJxNU48hcZgEJRWeFOC5truypARboVxXyrXVDSmiifYlpSdV+BKLTyyj3pE6XI/FJ4ZRuQgfIlei6CdOR/VifIj8jL9/09CCaCYtZGVoUZgpL2JpYUyEIwUtjo++f+OXJ+Q/ycjQCjBAApqQ0VIWerbFNrQS3lzallbDFuUP+/indbQiuheKplXxrOthXUID2AE9H1G+NqH8ISqj1VFjHdDDEdVufUKuXt+rvvexHoGQXzVO/Bw78iT9fTgczyqyrliSPoQQwtdRUtZ/L5Ad5+tjuOD3R47R7kqo5Xx8uhIKXwcxQm3KjYX/OH3L3hnvHwv3OJwl/zObTkhK3DYhtg8PEBG34UvoiZCIuF3FN9PhGQLiLviONbxCsrgtP5h+SShZ3EOWZY0koVRxN2xNvyWUJm5XsaPp8B4p4q6zXp5Qirj7bK9BiC/uPftJHybAFHfHfgBNEWKKO+cFQ3MI8cTdstNmYQ7ixW2yUZNQOMUqaeQa6pmEwm+0qfa6hELkEfnMKROKFLZTJ/QTS8hjacgri/p0jhb1iGWHRk3DyLHURs918HxZq+Zcmd4+Vwo/2PFQpxOg8SPGvUYImxJT9/JBftqTuhZ/BqW9y1wl/FBMfbk2wk/p5Lf9IJpsEMh+WMF0jEjys5BLWIlk0C5ZT4mUnlCO0UglPaWysFYmLSyWp76mhXki0sjk/xU7WCGRRq2jTSm+KFSDbsUX5o8vXi+7lacQatKXaBG2xAlXBMYrk8M1EsC1WuA1o8C16+A1NMG1fOE1xcG1DeI1VsK1nuI15+K1L8M1eOO1wOMNCcCNUeANmuCN4sANK+GNc+ENvOGNBOINTeKNleIN3uKNJuMNb+ONt+MtAMBbkQC4RAJvzQbgIhK8VS2Ay2zw1v0ALkQCXBkFuFQLcO0Y4mI2wNV1iMv9VNcf/gNxM/adlUVHuwAAAABJRU5ErkJggg==">    
+                    </div>
+                    <div class="mask">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAV1BMVEVMaXH5VRX6Vxf5VRb5VRX5VRb/aCP5VRX5VRX5Vhj9VRr7VRb4VRX5VBX7Vhf/XBz6VRX4Vhf4Vhb4VBX////8uqH92Mr6imD5dUH4ZS37n3v+9/T+7OWDZsHpAAAAE3RSTlMA7CydxIUH/LL5IEXj1jcSXk10bzb2/wAAA2tJREFUeNrlXNmS4yAMBHPaxkkcEc+1//+d+zBHzU4yiS2E6artL+iCRheSlCqAH+azidFOSfe9TpON0ZznwasG8KOLU6CbCFN0o9+XjP2FyzdWdidS/hR7Wok+nmpzGs1qNh+czFiPzeASMZDcUIVOZwIxEUwnTyey6RARhShL6RCpGPEgRudoAgkgmKMMn5MmIeiThHgsCcIWS8kFEkVwZZbHkjhsgVUaNVWA5tpu76gSHMvDHS1Vg2UYgGGiipg2C6lLVBVp4/s/aKoMvcmTzD1VRz9v4BNoB4TVjA497YJ+5a11mnaCXqXsIdFuSCte/3GiHTE9tJDe0q6wj7yIo53xIBwZaXfc9f2D3p+QvidsSw1ggQT0QEZdaEModEgXdufSTtQMN/O1o25HSN8y2IYawtyIOUJLQuE6EonUFPHqyVNjdFgHdHVEXWhN6Id1NNQc/zy0IbQnFIb2XvV3H5sQCKWmceL92JEn6efXy1OoImvPylQvOef850kyk/UlccdTfsflRT4KYVnp5YNQfnuVtta8G3vLX1ieZe+M98byd1x6yXfmyglJidsVxPb5B0TEbZVSygcRQiLiDp5vpvM1BMQ98h1rvoVicTt+rHiTULG4o1JqkiRUKu6JrelfCZWJO3g1kDChMnEPapYnVCLuWZ1rEOKL+8zON/IDMMVt2BniI0JMccd6hHjijuyyWV6D7eK2XLu4jlBeXjZbxlSVUL5sNIxJ6bqE8sYj0qqvTGijsPvqhF62EtJQGiJdWdTL1gtIdZ/9djs01TSMHEtt/x9ftvC8fawUfrDjIVMnQONHjOcaIWxJTD3LB/llKfUgngYtRXlZ8MKJYmnmOgmn0sW5fRQtNghUP5xgOUak+DnKFawWiQpa8FIlPaEao5UqekpVYV1BWbhGnfqjLMwrnNeo5H9+drAs0aukmL9ZIX7Th/xv0NfnC+/O5P/Lvr6nEP6k34Mz2C9OuE9gvG9yuEYCuFYLvGYUuHYdvIYmuJYvvKY4uLZBvMZKuNZTvOZcvPZluAZvvBZ4vCEBuDEKvEETvFEcuGElvHEuvIE3vJFAvKFJvLFSvMFbvNFkvOFtvPF2vAUAeCsSAJdI4K3ZAFxEgreqBXCZDd66H8CFSIArowCXagGuHUNczAa4ug5xuV/V9Yd/ATI3t6mq9tm3AAAAAElFTkSuQmCC"
+                        data-video="https://image.vipkid.com.cn/market/file/1539597232057-video-liutao.mp4"
+                        >
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        
+        <div class="container secthree">
+            <div class="container-box">
+                <h2 class="common-title">VIPKID专注于4-15岁少儿英语教育</h2>
+                <i></i>
+                <img class="map-bg" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section03/map_28512ed2.png"/>
+                <ul>
+                    <li class="col-3">
+                        <div class="con-box">
+                            <div class="con">
+                                <div class="">63<span class="">个</span></div>
+                                <p>国家和地区遍布学员</p>
+                            </div>
+                            
+                            <div class="hover-box">
+                                <div class="icon">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAVFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////9FDDDEAAAAG3RSTlMADOTt87otAyIU3fqMrXM/SIE1lcjQWsChUGY+jkgKAAADHklEQVQYGe3BSWLiMABFwW9bsiTPsw3v/vdsARkgMR1Ib3pBlV5eXl7+E/442iIrTTrbcQn6R3mVcqOovH5vWNlhO/2Or7nD5nqeq0oupn5pfZL4vOtXw1lZOT0prJzZY9CHfMx4MwU9JS84SVt98jVX0kFP6AwXgz50hhtlq4flhigF5sXrIjecZHXT+lATmVwPCgXR2HGWbbmijWg9OJ31RJnXQ9xK1Eg1F6aVNAONPjREs9MjKqJRUti4KBJpBgZ96ol6PcCXgHU6GRqbER0lC3S6sgHlIKk3xbY43VUDRdCHEailDVh0JaTAKuWczIPuGIgO+jQAs5IJWHStI2qVc5Z57VuBSVcCkCYTUa4bNWClynCyaVdO1OpKApQrUa1bA1EuuXwECu2qAKsbJRdT0BcrsCjKAaNdKXDUjYKzKdFXQ0kaJIUZWLXHEwXdqDmZg77zhyDJz0SL9hyBSbc6ojnonkNKVGvXCPT6ojGmCrojbJxMiXZZYNHjkspwYhPtK4BWj0oaw0nZO92RAV6P8VXG2Txoj68apxJI9AB3sLxpnPZ0BiqlkOpHrh1T3pXa1ZXAqi5NO/2da8eUNxmQaY/PiI76iT/WGe+mpQMK7dmIGv1VchgLPmRjLi2A1Z4MaHSXy4/bzKdsOzhFPTBqhyM6Ou1IhqWyhivZ1jldTMBReyaibGtan+gi8e3SVDblRrn2g9O7QOS1p+VDadIsMyXfzVWX6NoRSLXvkPE3me3bRF9ZoNIdoUrZUxZ1v3jtaYly3eXaZpsNb8p0qqvmkDvdNQGrftISHRKnHx2IBv3IAmnQjmQzNuhdKIBaPxuIau3ogVpvnAVKrwf0RL2+CYao1cVIVOkRbiJq9NXIidVZQ7Q6PcRnRL2u+GOzcZFLciNREfSgwRDVid6Emk+NFCyRyfWw1hAVnc58wYUZAatDQWQ6PaHNOLG5pFBwkQ4dME2cFLme4ifO1iVMRHPfHJwa3q1BT3JVyVlJVCeJb5e+4KKsnJ6XW+6ovX6nW9mxDvo93xfcSKtc/8gvo51TU2aFHY9eLy8vL/+HP5SAcAxLXgRCAAAAAElFTkSuQmCC" alt="">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+
+                    <li class="col-3">
+                        <div class="con-box">
+                            <div class="con">
+                                <div class="">63<span class="">个</span></div>
+                                <p>国家和地区遍布学员</p>
+                            </div>
+                            
+                            <div class="hover-box">
+                                <div class="icon">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAVFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////9FDDDEAAAAG3RSTlMADOTt87otAyIU3fqMrXM/SIE1lcjQWsChUGY+jkgKAAADHklEQVQYGe3BSWLiMABFwW9bsiTPsw3v/vdsARkgMR1Ib3pBlV5eXl7+E/442iIrTTrbcQn6R3mVcqOovH5vWNlhO/2Or7nD5nqeq0oupn5pfZL4vOtXw1lZOT0prJzZY9CHfMx4MwU9JS84SVt98jVX0kFP6AwXgz50hhtlq4flhigF5sXrIjecZHXT+lATmVwPCgXR2HGWbbmijWg9OJ31RJnXQ9xK1Eg1F6aVNAONPjREs9MjKqJRUti4KBJpBgZ96ol6PcCXgHU6GRqbER0lC3S6sgHlIKk3xbY43VUDRdCHEailDVh0JaTAKuWczIPuGIgO+jQAs5IJWHStI2qVc5Z57VuBSVcCkCYTUa4bNWClynCyaVdO1OpKApQrUa1bA1EuuXwECu2qAKsbJRdT0BcrsCjKAaNdKXDUjYKzKdFXQ0kaJIUZWLXHEwXdqDmZg77zhyDJz0SL9hyBSbc6ojnonkNKVGvXCPT6ojGmCrojbJxMiXZZYNHjkspwYhPtK4BWj0oaw0nZO92RAV6P8VXG2Txoj68apxJI9AB3sLxpnPZ0BiqlkOpHrh1T3pXa1ZXAqi5NO/2da8eUNxmQaY/PiI76iT/WGe+mpQMK7dmIGv1VchgLPmRjLi2A1Z4MaHSXy4/bzKdsOzhFPTBqhyM6Ou1IhqWyhivZ1jldTMBReyaibGtan+gi8e3SVDblRrn2g9O7QOS1p+VDadIsMyXfzVWX6NoRSLXvkPE3me3bRF9ZoNIdoUrZUxZ1v3jtaYly3eXaZpsNb8p0qqvmkDvdNQGrftISHRKnHx2IBv3IAmnQjmQzNuhdKIBaPxuIau3ogVpvnAVKrwf0RL2+CYao1cVIVOkRbiJq9NXIidVZQ7Q6PcRnRL2u+GOzcZFLciNREfSgwRDVid6Emk+NFCyRyfWw1hAVnc58wYUZAatDQWQ6PaHNOLG5pFBwkQ4dME2cFLme4ifO1iVMRHPfHJwa3q1BT3JVyVlJVCeJb5e+4KKsnJ6XW+6ovX6nW9mxDvo93xfcSKtc/8gvo51TU2aFHY9eLy8vL/+HP5SAcAxLXgRCAAAAAElFTkSuQmCC" alt="">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+
+                    <li class="col-3">
+                        <div class="con-box">
+                            <div class="con">
+                                <div class="">63<span class="">个</span></div>
+                                <p>国家和地区遍布学员</p>
+                            </div>
+                            
+                            <div class="hover-box">
+                                <div class="icon">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAVFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////9FDDDEAAAAG3RSTlMADOTt87otAyIU3fqMrXM/SIE1lcjQWsChUGY+jkgKAAADHklEQVQYGe3BSWLiMABFwW9bsiTPsw3v/vdsARkgMR1Ib3pBlV5eXl7+E/442iIrTTrbcQn6R3mVcqOovH5vWNlhO/2Or7nD5nqeq0oupn5pfZL4vOtXw1lZOT0prJzZY9CHfMx4MwU9JS84SVt98jVX0kFP6AwXgz50hhtlq4flhigF5sXrIjecZHXT+lATmVwPCgXR2HGWbbmijWg9OJ31RJnXQ9xK1Eg1F6aVNAONPjREs9MjKqJRUti4KBJpBgZ96ol6PcCXgHU6GRqbER0lC3S6sgHlIKk3xbY43VUDRdCHEailDVh0JaTAKuWczIPuGIgO+jQAs5IJWHStI2qVc5Z57VuBSVcCkCYTUa4bNWClynCyaVdO1OpKApQrUa1bA1EuuXwECu2qAKsbJRdT0BcrsCjKAaNdKXDUjYKzKdFXQ0kaJIUZWLXHEwXdqDmZg77zhyDJz0SL9hyBSbc6ojnonkNKVGvXCPT6ojGmCrojbJxMiXZZYNHjkspwYhPtK4BWj0oaw0nZO92RAV6P8VXG2Txoj68apxJI9AB3sLxpnPZ0BiqlkOpHrh1T3pXa1ZXAqi5NO/2da8eUNxmQaY/PiI76iT/WGe+mpQMK7dmIGv1VchgLPmRjLi2A1Z4MaHSXy4/bzKdsOzhFPTBqhyM6Ou1IhqWyhivZ1jldTMBReyaibGtan+gi8e3SVDblRrn2g9O7QOS1p+VDadIsMyXfzVWX6NoRSLXvkPE3me3bRF9ZoNIdoUrZUxZ1v3jtaYly3eXaZpsNb8p0qqvmkDvdNQGrftISHRKnHx2IBv3IAmnQjmQzNuhdKIBaPxuIau3ogVpvnAVKrwf0RL2+CYao1cVIVOkRbiJq9NXIidVZQ7Q6PcRnRL2u+GOzcZFLciNREfSgwRDVid6Emk+NFCyRyfWw1hAVnc58wYUZAatDQWQ6PaHNOLG5pFBwkQ4dME2cFLme4ifO1iVMRHPfHJwa3q1BT3JVyVlJVCeJb5e+4KKsnJ6XW+6ovX6nW9mxDvo93xfcSKtc/8gvo51TU2aFHY9eLy8vL/+HP5SAcAxLXgRCAAAAAElFTkSuQmCC" alt="">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+
+                    <li class="col-3">
+                        <div class="con-box">
+                            <div class="con">
+                                <div class="">63<span class="">个</span></div>
+                                <p>国家和地区遍布学员</p>
+                            </div>
+                            
+                            <div class="hover-box">
+                                <div class="icon">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAVFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////9FDDDEAAAAG3RSTlMADOTt87otAyIU3fqMrXM/SIE1lcjQWsChUGY+jkgKAAADHklEQVQYGe3BSWLiMABFwW9bsiTPsw3v/vdsARkgMR1Ib3pBlV5eXl7+E/442iIrTTrbcQn6R3mVcqOovH5vWNlhO/2Or7nD5nqeq0oupn5pfZL4vOtXw1lZOT0prJzZY9CHfMx4MwU9JS84SVt98jVX0kFP6AwXgz50hhtlq4flhigF5sXrIjecZHXT+lATmVwPCgXR2HGWbbmijWg9OJ31RJnXQ9xK1Eg1F6aVNAONPjREs9MjKqJRUti4KBJpBgZ96ol6PcCXgHU6GRqbER0lC3S6sgHlIKk3xbY43VUDRdCHEailDVh0JaTAKuWczIPuGIgO+jQAs5IJWHStI2qVc5Z57VuBSVcCkCYTUa4bNWClynCyaVdO1OpKApQrUa1bA1EuuXwECu2qAKsbJRdT0BcrsCjKAaNdKXDUjYKzKdFXQ0kaJIUZWLXHEwXdqDmZg77zhyDJz0SL9hyBSbc6ojnonkNKVGvXCPT6ojGmCrojbJxMiXZZYNHjkspwYhPtK4BWj0oaw0nZO92RAV6P8VXG2Txoj68apxJI9AB3sLxpnPZ0BiqlkOpHrh1T3pXa1ZXAqi5NO/2da8eUNxmQaY/PiI76iT/WGe+mpQMK7dmIGv1VchgLPmRjLi2A1Z4MaHSXy4/bzKdsOzhFPTBqhyM6Ou1IhqWyhivZ1jldTMBReyaibGtan+gi8e3SVDblRrn2g9O7QOS1p+VDadIsMyXfzVWX6NoRSLXvkPE3me3bRF9ZoNIdoUrZUxZ1v3jtaYly3eXaZpsNb8p0qqvmkDvdNQGrftISHRKnHx2IBv3IAmnQjmQzNuhdKIBaPxuIau3ogVpvnAVKrwf0RL2+CYao1cVIVOkRbiJq9NXIidVZQ7Q6PcRnRL2u+GOzcZFLciNREfSgwRDVid6Emk+NFCyRyfWw1hAVnc58wYUZAatDQWQ6PaHNOLG5pFBwkQ4dME2cFLme4ifO1iVMRHPfHJwa3q1BT3JVyVlJVCeJb5e+4KKsnJ6XW+6ovX6nW9mxDvo93xfcSKtc/8gvo51TU2aFHY9eLy8vL/+HP5SAcAxLXgRCAAAAAElFTkSuQmCC" alt="">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+                </ul>
+                <div class="tips">以上数据为内部统计数据</div>
+                <a><div class="obt-btn">免费领取试听课</div></a>
+            </div>
+            
+        </div>
+
+
+        <div class="container secfour">
+            <h2></h2>
+            <ul >
+                <li class="col-4">
+                    <div class="con">
+                        <a href="">
+                            <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study1_6e6ecd3a.jpg" alt="">
+                            <div class="text">
+                                <p>严选60,000名北美好外教</p>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-4">
+                    <div class="con">
+                        <a href="">
+                            <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study2_f5f39f43.jpg" alt="">
+                            <div class="text">
+                                <p>严选60,000名北美好外教</p>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                    <li class="col-4">
+                            <div class="con">
+                                <a href="">
+                                    <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study3_c529810a.jpg" alt="">
+                                    <div class="text">
+                                        <p>严选60,000名北美好外教</p>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                                <div class="con">
+                                    <a href="">
+                                        <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study1_6e6ecd3a.jpg" alt="">
+                                        <div class="text">
+                                            <p>严选60,000名北美好外教</p>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                    <div class="con">
+                                        <a href="">
+                                            <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study1_6e6ecd3a.jpg" alt="">
+                                            <div class="text">
+                                                <p>严选60,000名北美好外教</p>
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="col-4">
+                                        <div class="con">
+                                            <a href="">
+                                                <img class="w100" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section04/study1_6e6ecd3a.jpg" alt="">
+                                                <div class="text">
+                                                    <p>严选60,000名北美好外教</p>
+                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXHk5OTr6+ve3t7e3t7e3t7e3t7e3t7i4uLe3t7e3t7d3d3f39/d3d2yRPNzAAAADXRSTlMAEQjMsd2evyJUf/OKpube3wAAAHFJREFUSMft1UEOgCAMAEEqCAj2/981xDMaV4IHu1czCalSnbMsCxVrEOI2VfUCIZOpybQ8hwuW4psMX0gwIFmbjFNlfin33uNS9bqOzHpbGQvxUflwhr8Ome3gR06vFXV4dVB3rkewNvBCxr8Ay/pzB29NDMRmSXyvAAAAAElFTkSuQmCC" alt="">
+                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAKlBMVEVMaXH/Wh75VBX5VBX/Yh75VRX6VRb5VBX5VRX/WBr5VRX5VBX5Vxn4VBXad6dSAAAADXRSTlMAELzMCN2FrZ4dVPMpVf0rIgAAAG5JREFUSMft1UEOgCAMAEEKCCj2/981PAANC9GD3auZhGipzlmWhSo1C3GHqgaBkEnfpI/jMGIpYU5m96rcmixA7p/J1Hucqt7Xkac+ltZCfFT+cpZ/DuroyNEhn3PjFxmvDurwesQLGf8CLOvPXUcbDL0s1SVVAAAAAElFTkSuQmCC" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+            </ul>
+        </div>
+
+
+        <div class="container secfive">
+            <video src="https://image.vipkid.com.cn/market/file/1539516532744-waijiaodahui_bg.mp4"
+            poster="https://image.vipkid.com.cn/market/file/1539667910430-waijiaodahui.png"
+            autoplay="autoplay"
+            loop="loop"
+            preload="preload"></video>
+            <div class="main-con">
+                <h2 class="common-title">北美好外教 为全球小朋友提供高品质教学服务<i></i></h2>
+                <ul>
+                    <li class="col-3">
+                        <div class="num">60,000<span>名</span></div>
+                        <p>北美优质外教</p>
+                    </li>
+                    <li class="col-3">
+                        <div class="num">60,000<span>名</span></div>
+                        <p>北美优质外教</p>
+                    </li>
+                    <li class="col-3">
+                        <div class="num">60,000<span>名</span></div>
+                        <p>北美优质外教</p>
+                    </li>
+                    <li class="col-3">
+                        <div class="num">60,000<span>名</span></div>
+                        <p>北美优质外教</p>
+                    </li>
+
+                </ul>
+                <div class="register">
+                    <div class="play-btn">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMaXH///+a4ocPAAAAAXRSTlMAQObYZgAAAEFJREFUOMvV0sEJADAIBEGn/6ZTwkLMJ/ceBPVm3oQEQZQgCEGUIIgSBCGIEgRR4mLCcou6w/IXuz5Uo5atnp9zAJAaASJBFheXAAAAAElFTkSuQmCC" alt="">播放视频
+                    </div>
+                    <a href="">
+                        <div class="play-btn">了解北美外教</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container secsix">
+            <h2 class="common-title">科技赋能 守护小朋友的每一堂课<i></i></h2>
+            <ul>
+                <li class="col-4">
+                    <div class="hover-con">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p>AI赋能</p>
+                        <p class="detail">通过大数据和人工智能建立个性化学习路径</p>
+                    </div>
+                    
+                </li>
+                <li class="col-4">
+                    <div class="hover-con">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p>AI赋能</p>
+                        <p class="detail">通过大数据和人工智能建立个性化学习路径</p>
+                    </div>
+                    
+                </li>
+                <li class="col-4">
+                    <div class="hover-con">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p>AI赋能</p>
+                        <p class="detail">通过大数据和人工智能建立个性化学习路径</p>
+                    </div>
+                    
+                </li>
+            </ul>
+            <div class="register">
+                <a href="">
+                    <div class="obt-btn">查看详情</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container secseven">
+            <h2 class="common-title">我们的承诺<i></i></h2>
+            <img class="map-bg" src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section07/promise_4717e2dd.png" alt="">
+            <div class="person-img">
+                <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section07/liutao_f7fe8cf2.png" alt="">
+            </div>
+            <ul>
+                <li class="col-6"></li>
+                <li class="col-6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABgCAMAAADYWPdNAAAAOVBMVEVMaXH/xxb/yBf/zBv/yBf/xxb/2Sj/xxf/yBj/xxb/xxb/xxb/yBj/xxb/yBj/yBf/xxf/xxb/xhbTG17wAAAAEnRSTlMA3VQWh/UHpCC7zOoyfUNmc68ZUEmRAAACG0lEQVRo3u2Y23aEMAhFE3M1GUfl/z+2Y6ftqhXiCa8Nz7A2gROCGtM253ejtak8MEfnA9GkhRAVxDEuLwiRjQrIoxyhtALpWHrb0g1x6Su0uhvPPNO3hdxJWcNPrIc9ifpU8CvBl7VU4E6eRE/dUQ6bG/2zZ0qHCmL6EyoL9U8+h21owcoltAopXvI5VOAwGVcm1mOn/rSEUJ6BjWWEGmfiDVDBxFMYFYgUKrcqmKTQiwriLrreqkCoGCfUJFPuVPAIjdjzuFoanmSbU93VVoYnsT1bkPZzEEsjNp2kluWE7HojgIRCjJET8lEtskupxcbU2ysjNyZFVCnz/ZyRrkG4NrRAWuwqmc2wK0CJVqA42BVZAzaYIvUfoQj9t9xcrvrpz2dYM3xu6GkWMpzgJgZoNV3xOkyqyf82i7bfmBl789hXBn9qHeuKbfPszNxx4WOHiQHPsChXDKmrfIZOfxi+Zk9ckuDWXPEMuTFuwY8l9Ga+LKALKThoHJ4RWLMdrxnXmhD1rdlwsSSMksHFXLo14Dc6d2ukb/SAZ4QoIOEHD0Z/OTd8xBYQU3CNrnoF9NTbKzeNYzx31DvphZY76r2rXzR2fqSONmb9tUkdKwP2E4BVj+8YS1GPWXAMeju3jq2L0X41+lkj/Q7UP50sZsIxYb7aAt7swsQ6HoMuxR6MzQMzMAMzMAMzMAMzMAMzMAMzMAMzMAPznzEf0dmBZdeyRzwAAAAASUVORK5CYII=" alt="">
+                    <div class="promise-con">
+                        <dl>
+                            <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAolBMVEVMaXH/ZST/bi80NDQ+Pj4zMzP78+8+Pj42NjY+Pj5MTExbW1tNTU3/e0IzMzP/bjBUVFT/ZSIzMzMzMzP/0LtWVlb/Zib/ZSP+kmb/zrr/jFv+g0//z7v/z7r/z7n/wqj/ZiaxlYszMzP6+vr/zrn/ZCI9PT05OTn/Zyf/y7T+v6To6Oj/cDNGRkatra3/oHj84dZoaGj/sI/+1MPFxcWDg4NvTkeHAAAAIHRSTlMA+BtTOJj9Cw8G/qru/uasVuLb80/STm2W3v7litml32oOlUgAAAI/SURBVGje7djbbtpAFIXhwdgYgwnBkHPaSmu8DDHnJH3/V+sFRKJSCzP1xiNV+79Dsvxp+zjGGE3TNE3TNE3TrlI8zCs0az64u/VlsyFkymM/9w5SVV5DDyFX5TFzDADrzdI2a/m5B4Dcb+B1U9Zaa+0GANwPdg5gY0XaA7hzhtcAljLwJ4CBM1zJwUsAc2d4IHeoLQB4wetlAHguczv5wxgcH7YnVU6dbD/Y/9wsfeEvuXH7T09YTIYvjHiYz4PAxhiTZVmWpQCQpmmapv1zpadlWb9/O8z/Ff7TL7/VRB4IPr5gQ8CmCgVjHQrGIBSMdSi4CgVD4f8Cjh7Gkw7PNBlHV4CjMS83icTh+w5dGkvDD3RrIgzfkyRH9a53Zs3XI9mRhaMOyUV9YbF5BXhMcvFhW4cjkqxt+/AjydFh37uP8q+9icMvx4F7Z9QjvBCFRyR31u7K8n1Fklxs24EXJHt2V5bl6ut+rduDe2X78Ijk4apq+VC/kHwvLyYPP5IchYAjktwGgA+PzPcA8OElsW0f/notbuu3lmHnhcBKfOnzuHCCn+UXez+eXQau5eFZWW9Hq7Nzr57r8grr6tfSpWss6F9DwWb2dNF9utK30+z7t/PuTL8WFTZTAKkMnAKYOm9dAIhl4BhA4bx1AiCRgX/f1aW6OB25CRwDQNd586wAcBML/G18A6DIjN/ISOK0CZzGCfwGPp4aoRL/iyKEa0y3kGCLrv8pyrpJMW2CToukmxlN0zRN0zRN0zTZfgHme7GZ9nJDmgAAAABJRU5ErkJggg==" alt=""></dt>
+                            <dd>
+                                <h5>无忧退费</h5>
+                                <p>更多详情请查看<a href="">《免费试学承诺》</a></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAolBMVEVMaXH/ZST/bi80NDQ+Pj4zMzP78+8+Pj42NjY+Pj5MTExbW1tNTU3/e0IzMzP/bjBUVFT/ZSIzMzMzMzP/0LtWVlb/Zib/ZSP+kmb/zrr/jFv+g0//z7v/z7r/z7n/wqj/ZiaxlYszMzP6+vr/zrn/ZCI9PT05OTn/Zyf/y7T+v6To6Oj/cDNGRkatra3/oHj84dZoaGj/sI/+1MPFxcWDg4NvTkeHAAAAIHRSTlMA+BtTOJj9Cw8G/qru/uasVuLb80/STm2W3v7litml32oOlUgAAAI/SURBVGje7djbbtpAFIXhwdgYgwnBkHPaSmu8DDHnJH3/V+sFRKJSCzP1xiNV+79Dsvxp+zjGGE3TNE3TNE3TrlI8zCs0az64u/VlsyFkymM/9w5SVV5DDyFX5TFzDADrzdI2a/m5B4Dcb+B1U9Zaa+0GANwPdg5gY0XaA7hzhtcAljLwJ4CBM1zJwUsAc2d4IHeoLQB4wetlAHguczv5wxgcH7YnVU6dbD/Y/9wsfeEvuXH7T09YTIYvjHiYz4PAxhiTZVmWpQCQpmmapv1zpadlWb9/O8z/Ff7TL7/VRB4IPr5gQ8CmCgVjHQrGIBSMdSi4CgVD4f8Cjh7Gkw7PNBlHV4CjMS83icTh+w5dGkvDD3RrIgzfkyRH9a53Zs3XI9mRhaMOyUV9YbF5BXhMcvFhW4cjkqxt+/AjydFh37uP8q+9icMvx4F7Z9QjvBCFRyR31u7K8n1Fklxs24EXJHt2V5bl6ut+rduDe2X78Ijk4apq+VC/kHwvLyYPP5IchYAjktwGgA+PzPcA8OElsW0f/notbuu3lmHnhcBKfOnzuHCCn+UXez+eXQau5eFZWW9Hq7Nzr57r8grr6tfSpWss6F9DwWb2dNF9utK30+z7t/PuTL8WFTZTAKkMnAKYOm9dAIhl4BhA4bx1AiCRgX/f1aW6OB25CRwDQNd586wAcBML/G18A6DIjN/ISOK0CZzGCfwGPp4aoRL/iyKEa0y3kGCLrv8pyrpJMW2CToukmxlN0zRN0zRN0zTZfgHme7GZ9nJDmgAAAABJRU5ErkJggg==" alt=""></dt>
+                            <dd>
+                                <h5>无忧退费</h5>
+                                <p>更多详情请查看<a href="">《免费试学承诺》</a></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAolBMVEVMaXH/ZST/bi80NDQ+Pj4zMzP78+8+Pj42NjY+Pj5MTExbW1tNTU3/e0IzMzP/bjBUVFT/ZSIzMzMzMzP/0LtWVlb/Zib/ZSP+kmb/zrr/jFv+g0//z7v/z7r/z7n/wqj/ZiaxlYszMzP6+vr/zrn/ZCI9PT05OTn/Zyf/y7T+v6To6Oj/cDNGRkatra3/oHj84dZoaGj/sI/+1MPFxcWDg4NvTkeHAAAAIHRSTlMA+BtTOJj9Cw8G/qru/uasVuLb80/STm2W3v7litml32oOlUgAAAI/SURBVGje7djbbtpAFIXhwdgYgwnBkHPaSmu8DDHnJH3/V+sFRKJSCzP1xiNV+79Dsvxp+zjGGE3TNE3TNE3TrlI8zCs0az64u/VlsyFkymM/9w5SVV5DDyFX5TFzDADrzdI2a/m5B4Dcb+B1U9Zaa+0GANwPdg5gY0XaA7hzhtcAljLwJ4CBM1zJwUsAc2d4IHeoLQB4wetlAHguczv5wxgcH7YnVU6dbD/Y/9wsfeEvuXH7T09YTIYvjHiYz4PAxhiTZVmWpQCQpmmapv1zpadlWb9/O8z/Ff7TL7/VRB4IPr5gQ8CmCgVjHQrGIBSMdSi4CgVD4f8Cjh7Gkw7PNBlHV4CjMS83icTh+w5dGkvDD3RrIgzfkyRH9a53Zs3XI9mRhaMOyUV9YbF5BXhMcvFhW4cjkqxt+/AjydFh37uP8q+9icMvx4F7Z9QjvBCFRyR31u7K8n1Fklxs24EXJHt2V5bl6ut+rduDe2X78Ijk4apq+VC/kHwvLyYPP5IchYAjktwGgA+PzPcA8OElsW0f/notbuu3lmHnhcBKfOnzuHCCn+UXez+eXQau5eFZWW9Hq7Nzr57r8grr6tfSpWss6F9DwWb2dNF9utK30+z7t/PuTL8WFTZTAKkMnAKYOm9dAIhl4BhA4bx1AiCRgX/f1aW6OB25CRwDQNd586wAcBML/G18A6DIjN/ISOK0CZzGCfwGPp4aoRL/iyKEa0y3kGCLrv8pyrpJMW2CToukmxlN0zRN0zRN0zTZfgHme7GZ9nJDmgAAAABJRU5ErkJggg==" alt=""></dt>
+                            <dd>
+                                <h5>无忧退费</h5>
+                                <p>更多详情请查看<a href="">《免费试学承诺》</a></p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="container seceight">
+            <h2 class="common-title">如何免费体验VIPKID试听课<i></i></h2>
+            <ul>
+                <li class="col-4">
+                    <div class="icon-box">
+                        <img class="num" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAEYAQMAAAAj3ytGAAAABlBMVEVMaXEAAACaXKEdAAAAAnRSTlMACQ9PdZwAAAC4SURBVFjD7dUxDsIwEETRiVy49A3wUfZoztFyFB+BkiLKpkFCIH5HgzLTPv0tbcm7wOokCZIlSRrKIClJ0lGSpKB0lCSpKEGyJElDGSQlSRrKIHke+yIdJUkqSpAsSdJQguR17FMayiApSdJRkqSiBEqSVJRusfy7BMmjk6wku+jaJmgOUTNFjai5i5qVml3UbILmEDVT0NxEzfu7NEUfgxs3bty4cePGjRs3bty4cePGzU8b77I7AX8fo5sbubv/AAAAAElFTkSuQmCC" alt="">
+                        <div class="icon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACIBAMAAADOlL5hAAAAG1BMVEVMaXH7Vhf8XB/5VRX5VRX5VRX4VBb4VBX/x6/rlWmaAAAAB3RSTlMAQxnifMiagzxY8gAAAO5JREFUaN7t2b8KglAcxfFr/1ydcg0yWqPFNVxao6W13sAyOa/QYzdYUER68XeipPMdCz5g2YWOzimllOpcyQ5vKzM/I0hRUxF5ITFqO/oYvbQeKSYeyAANrTyQYROy8UDC2suOgdwPydu+K+T/kMtLQoQIESJEiBAhQoQI6SKi/zufRcZpcbAiMwDY2pBqkHkYXtog02qoWJqQ27pUWpDgvplEBmQEIEsA7A1IHzg7twYWBiQETs7Nn1/5CkK5HMoHS/mKKTcb57an/AApRwHnUNJpz0Tsoy5lXqYM3ZTJnTL+cx5DUB6IKKWU+qWuILxqng8tgegAAAAASUVORK5CYII=" alt="">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h5>注册免费领取</h5>
+                        <p>注册后我们会尽快与您联系</p>
+                    </div>
+                </li>
+                <li class="col-4">
+                    <div class="icon-box">
+                        <img class="num" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAEYAQMAAAAj3ytGAAAABlBMVEVMaXEAAACaXKEdAAAAAnRSTlMACQ9PdZwAAAC4SURBVFjD7dUxDsIwEETRiVy49A3wUfZoztFyFB+BkiLKpkFCIH5HgzLTPv0tbcm7wOokCZIlSRrKIClJ0lGSpKB0lCSpKEGyJElDGSQlSRrKIHke+yIdJUkqSpAsSdJQguR17FMayiApSdJRkqSiBEqSVJRusfy7BMmjk6wku+jaJmgOUTNFjai5i5qVml3UbILmEDVT0NxEzfu7NEUfgxs3bty4cePGjRs3bty4cePGzU8b77I7AX8fo5sbubv/AAAAAElFTkSuQmCC" alt="">
+                        <div class="icon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACIBAMAAADOlL5hAAAAG1BMVEVMaXH7Vhf8XB/5VRX5VRX5VRX4VBb4VBX/x6/rlWmaAAAAB3RSTlMAQxnifMiagzxY8gAAAO5JREFUaN7t2b8KglAcxfFr/1ydcg0yWqPFNVxao6W13sAyOa/QYzdYUER68XeipPMdCz5g2YWOzimllOpcyQ5vKzM/I0hRUxF5ITFqO/oYvbQeKSYeyAANrTyQYROy8UDC2suOgdwPydu+K+T/kMtLQoQIESJEiBAhQoQI6SKi/zufRcZpcbAiMwDY2pBqkHkYXtog02qoWJqQ27pUWpDgvplEBmQEIEsA7A1IHzg7twYWBiQETs7Nn1/5CkK5HMoHS/mKKTcb57an/AApRwHnUNJpz0Tsoy5lXqYM3ZTJnTL+cx5DUB6IKKWU+qWuILxqng8tgegAAAAASUVORK5CYII=" alt="">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h5>注册免费领取</h5>
+                        <p>注册后我们会尽快与您联系</p>
+                    </div>
+                </li>
+                <li class="col-4">
+                    <div class="icon-box">
+                        <img class="num" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAEYAQMAAAAj3ytGAAAABlBMVEVMaXEAAACaXKEdAAAAAnRSTlMACQ9PdZwAAAC4SURBVFjD7dUxDsIwEETRiVy49A3wUfZoztFyFB+BkiLKpkFCIH5HgzLTPv0tbcm7wOokCZIlSRrKIClJ0lGSpKB0lCSpKEGyJElDGSQlSRrKIHke+yIdJUkqSpAsSdJQguR17FMayiApSdJRkqSiBEqSVJRusfy7BMmjk6wku+jaJmgOUTNFjai5i5qVml3UbILmEDVT0NxEzfu7NEUfgxs3bty4cePGjRs3bty4cePGzU8b77I7AX8fo5sbubv/AAAAAElFTkSuQmCC" alt="">
+                        <div class="icon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACIBAMAAADOlL5hAAAAG1BMVEVMaXH7Vhf8XB/5VRX5VRX5VRX4VBb4VBX/x6/rlWmaAAAAB3RSTlMAQxnifMiagzxY8gAAAO5JREFUaN7t2b8KglAcxfFr/1ydcg0yWqPFNVxao6W13sAyOa/QYzdYUER68XeipPMdCz5g2YWOzimllOpcyQ5vKzM/I0hRUxF5ITFqO/oYvbQeKSYeyAANrTyQYROy8UDC2suOgdwPydu+K+T/kMtLQoQIESJEiBAhQoQI6SKi/zufRcZpcbAiMwDY2pBqkHkYXtog02qoWJqQ27pUWpDgvplEBmQEIEsA7A1IHzg7twYWBiQETs7Nn1/5CkK5HMoHS/mKKTcb57an/AApRwHnUNJpz0Tsoy5lXqYM3ZTJnTL+cx5DUB6IKKWU+qWuILxqng8tgegAAAAASUVORK5CYII=" alt="">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h5>注册免费领取</h5>
+                        <p>注册后我们会尽快与您联系</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="register">
+                <a href="">
+                    <div class="obt-btn">查看详情</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container secnine">
+            <div class="cooperate-box">
+                <h2 class="common-title">学术合作<i></i></h2>
+                <ul>
+                    <li class="col-3">
+                        <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section09/logo01_2352838f.png" alt="">
+                    </li>
+                    <li class="col-3">
+                        <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section09/logo01_2352838f.png" alt="">
+                    </li>
+                    <li class="col-3">
+                        <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section09/logo01_2352838f.png" alt="">
+                    </li>
+                    <li class="col-3">
+                        <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section09/logo01_2352838f.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        
+        <div class="container secten">
+            <h2 class="common-title">企业荣誉<i></i></h2>
+            <ul>
+                <li class="col-3">
+                    <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section10/reward06_5662e47c.png" alt="">
+                </li>
+                <li class="col-3">
+                    <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section10/reward06_5662e47c.png" alt="">
+                </li>
+                <li class="col-3">
+                    <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section10/reward06_5662e47c.png" alt="">
+                </li>                
+                <li class="col-3">
+                    <img src="https://s.vipkidstatic.com/fe-static/parent/panda/web/home/img/section10/reward06_5662e47c.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-second-info">
+            <div class="info">
+                <div class="consultant">
+                    <h5 class="title">公司信息<i></i></h5>
+                    <h2>
+                        <img src="https://image.vipkid.com.cn/market/file/1539704679054-tel.png" alt="">
+                        95753
+                    </h2>
+                    <span></span>
+                    <div class="register">
+                        <a href="">
+                            <div class="btn">在线咨询</div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="company">
+                    <h5 class="title">公司信息<i></i></h5>
+                    <div>
+                        <p><a href="">关于我们</a></p>
+                        <p><a href="">关于我们</a></p>
+                        <p><a href="">关于我们</a></p>
+                        <p><a href="">关于我们</a></p>
+                        <p><a href="">关于我们</a></p>
+                        <p><a href="">关于我们</a></p>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <p><a>小恐龙乐园</a></p>
+                        <p><a>小恐龙乐园</a></p>
+                        <p><a>小恐龙乐园</a></p>
+                        <p><a>小恐龙乐园</a></p>
+                        <p><a>小恐龙乐园</a></p>
+                    </div>
+                </div>
+                <div class="our">
+                    <h5 class="title">关于我们<i></i></h5>
+                    <ul>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAANlBMVEX///////////////////////////9MaXH///////////////////////////////////////9ibvcDAAAAEnRSTlO/ciwdsLk5AAWkjA5/l2ZGT1f99JznAAAB7UlEQVRYw+2X25aDIAxFw7VAuPX/f3ZarRhsFcR5mTU9b7pwSxKSELj9guAL+YcQTMwHq5QNjmkcgYgYoJKN4iSEe/ggp09AhIMdOdELSQp2paLpgRgPh3LYhpgADVnRghgHTUnRgHjokMVDSIYuOXMAQdUHgfsBZDXGJqFrF3susixuwV0IXxnP/Rq7/bcuj3EXwsqaNL2L5JDNXihbUbgDMWUJzElyJwGZV9nNb94h62Zfu6XxFhvH+x0II9/oykUPBazsXex7g1TRCGxz7pRn1QLpWMZ3iITTctlsIAoGJClmFPIIHL9ozuytRCAWRhVXiIerFKgO6GmlBSIuQJRYEjBcoLgFktqnQqO2a2wxqypRYFtAditaSSleJXpYKptuQZ7f4fKAdZLiUqh9RygTjQirdjlDsGVQ1LG4QWVNf+pL3xFyOD5hbaPjFEkauhhNIUWvFhiu76SutWM+qTrHKTEK4YM+4RTyssbeWVDnrCEQOTf0yTLBU866K+yZQviEqFtTR7margAFousuMEdd9niEmiM+NEjdV2QbA0Lsun+1pgzWc4drjiqs4x7Ynneyat4lO4YmHg4Kff/kpT+WCWVOjm+ckSOjXnmhz8+AIkXmHYuZmxv6V/5eGyS5K1fLK9Ootv47of8FyA8KNkk5usJj2gAAAABJRU5ErkJggg==" alt="">
+                            <p>VIPKID</p>
+                            <p>英文亲子阅读</p>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAANlBMVEX///////////////////////////9MaXH///////////////////////////////////////9ibvcDAAAAEnRSTlO/ciwdsLk5AAWkjA5/l2ZGT1f99JznAAAB7UlEQVRYw+2X25aDIAxFw7VAuPX/f3ZarRhsFcR5mTU9b7pwSxKSELj9guAL+YcQTMwHq5QNjmkcgYgYoJKN4iSEe/ggp09AhIMdOdELSQp2paLpgRgPh3LYhpgADVnRghgHTUnRgHjokMVDSIYuOXMAQdUHgfsBZDXGJqFrF3susixuwV0IXxnP/Rq7/bcuj3EXwsqaNL2L5JDNXihbUbgDMWUJzElyJwGZV9nNb94h62Zfu6XxFhvH+x0II9/oykUPBazsXex7g1TRCGxz7pRn1QLpWMZ3iITTctlsIAoGJClmFPIIHL9ozuytRCAWRhVXiIerFKgO6GmlBSIuQJRYEjBcoLgFktqnQqO2a2wxqypRYFtAditaSSleJXpYKptuQZ7f4fKAdZLiUqh9RygTjQirdjlDsGVQ1LG4QWVNf+pL3xFyOD5hbaPjFEkauhhNIUWvFhiu76SutWM+qTrHKTEK4YM+4RTyssbeWVDnrCEQOTf0yTLBU866K+yZQviEqFtTR7margAFousuMEdd9niEmiM+NEjdV2QbA0Lsun+1pgzWc4drjiqs4x7Ynneyat4lO4YmHg4Kff/kpT+WCWVOjm+ckSOjXnmhz8+AIkXmHYuZmxv6V/5eGyS5K1fLK9Ootv47of8FyA8KNkk5usJj2gAAAABJRU5ErkJggg==" alt="">
+                            <p>VIPKID</p>
+                            <p>英文亲子阅读</p>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAANlBMVEX///////////////////////////9MaXH///////////////////////////////////////9ibvcDAAAAEnRSTlO/ciwdsLk5AAWkjA5/l2ZGT1f99JznAAAB7UlEQVRYw+2X25aDIAxFw7VAuPX/f3ZarRhsFcR5mTU9b7pwSxKSELj9guAL+YcQTMwHq5QNjmkcgYgYoJKN4iSEe/ggp09AhIMdOdELSQp2paLpgRgPh3LYhpgADVnRghgHTUnRgHjokMVDSIYuOXMAQdUHgfsBZDXGJqFrF3susixuwV0IXxnP/Rq7/bcuj3EXwsqaNL2L5JDNXihbUbgDMWUJzElyJwGZV9nNb94h62Zfu6XxFhvH+x0II9/oykUPBazsXex7g1TRCGxz7pRn1QLpWMZ3iITTctlsIAoGJClmFPIIHL9ozuytRCAWRhVXiIerFKgO6GmlBSIuQJRYEjBcoLgFktqnQqO2a2wxqypRYFtAditaSSleJXpYKptuQZ7f4fKAdZLiUqh9RygTjQirdjlDsGVQ1LG4QWVNf+pL3xFyOD5hbaPjFEkauhhNIUWvFhiu76SutWM+qTrHKTEK4YM+4RTyssbeWVDnrCEQOTf0yTLBU866K+yZQviEqFtTR7margAFousuMEdd9niEmiM+NEjdV2QbA0Lsun+1pgzWc4drjiqs4x7Ynneyat4lO4YmHg4Kff/kpT+WCWVOjm+ckSOjXnmhz8+AIkXmHYuZmxv6V/5eGyS5K1fLK9Ootv47of8FyA8KNkk5usJj2gAAAABJRU5ErkJggg==" alt="">
+                            <p>VIPKID</p>
+                            <p>英文亲子阅读</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="display: none">
+            <div >
+                <ul class="auth">
+                    <li><img src="data:image/png;base64,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" alt=""></li>
+                </ul>
+            </div>
+            <div class="cop">
+                <p><span>北京大米科技有限公司</span></p>
+                <p><span>北京大米科技有限公司</span></p>
+                <p><span>北京大米科技有限公司</span></p>
+            </div>
+            <div class="china">
+                <div>中国</div>
+            </div>
+        </div>
+
+    </div>
+
+        
+    <script src="./js/vue.js"></script>
+    <script>
+    let vm= new Vue({
+        el:"#app",
+    });
+    </script>
+    
+</body>
+</html>

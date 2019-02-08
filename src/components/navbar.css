@@ -1,5 +1,8 @@
 
-
+.nav-title{
+  overflow: hidden;
+  background: #fff;
+}
   .left-navbar{
     width:310px;
     display: none;
@@ -89,10 +92,9 @@
     min-width: 1024px;
     height: 90px;
     line-height: 90px;
-    width: 100%;
     position: fixed;
     top:0;
-    left:0;
+    /* left:0; */
     white-space: nowrap;
   }
   .pc-header .brand{
@@ -111,7 +113,7 @@
     display: inline-block;
     margin: auto 15px;
   }
-  .pc-header li.active:before{
+  .pc-header a.active:before{
     content:"";
     display: block;
     height: 2px;

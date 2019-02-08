@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Route ,BrowserRouter as Router,Switch} from 'react-router-dom';
 
 import App from './containers/App';
-import {Route ,BrowserRouter as Router,Switch} from 'react-router-dom';
-import * as serviceWorker from './serviceWorker';
-
 import Home from './containers/home/Home';
 import Classlist from './containers/classlist/Classlist.js';
+
+import * as serviceWorker from './serviceWorker';
+
+
 
 ReactDOM.render(<App>
     <Router>

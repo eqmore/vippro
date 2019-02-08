@@ -1,14 +1,15 @@
 import React,{Component} from 'react';
 import ReactSwipe from 'react-swipe';
-
-const Carousel = () => {
+import './swiper.css';
+const Carousel = (props) => {
+  console.log(props);
   let reactSwipeEl;
-  const lists=[
-    {photoUrl:"https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner1_81ac8067.png"},
-    {photoUrl:"https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner3_7c3ecb3c.png"}
-]
+//   lists=[
+//     {photoUrl:"https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner1_81ac8067.png"},
+//     {photoUrl:"https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner3_7c3ecb3c.png"}
+// ]
   return (
-    <div>
+    <div className="home-swiper">
       <ReactSwipe
         className="carousel"
         swipeOptions={{ continuous: true,auto:3000 }}
@@ -17,13 +18,16 @@ const Carousel = () => {
         <div><img style={{width:"100%"}} src="https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner1_81ac8067.png"></img></div>
         <div><img  style={{width:"100%"}} src="https://s.vipkidstatic.com/fe-static/parent/panda/web/plugs/homebanner/img/banner/banner3_7c3ecb3c.png"></img></div>
       </ReactSwipe>
-      {lists.map((item,index)=>(
-          <div onclick={()=>reactSwipeEl.slide(index)} 
-          style={{position:"absolute",bottom:"-10px",left:"50%",width:"20px",height:"4px",background:"#fff"}}
-          >{index}</div>
+      <div className="dots">
+      {
+        props.lists.map((item,index)=>(
+          <span onClick={()=>{reactSwipeEl.slide(index)}} key={index}
+          className={index===props.i?"active":""}
+          ></span>
       ))}
-      <button onClick={() => reactSwipeEl.next()}>Next</button>
-      <button onClick={() => reactSwipeEl.prev()}>Previous</button>
+      </div>
+      {/* <button onClick={() => reactSwipeEl.next()}>Next</button>
+      <button onClick={() => reactSwipeEl.prev()}>Previous</button> */}
     </div>
   );
 };

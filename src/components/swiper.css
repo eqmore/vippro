@@ -3,17 +3,17 @@
   }
   .home-swiper .dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     width: 100%;
     left: 0;
     text-align: center;
   }
   .home-swiper .dots span {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 40px;
+    height: 4px;
     background: #dfdfdf;
-    border-radius: 50%;
+    border-radius: 2px;
     margin: 5px;
   }
   .home-swiper .dots span.active {

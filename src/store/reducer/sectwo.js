@@ -6,9 +6,8 @@ let initialState = {
 function reducer(state=initialState,action){
     switch(action.type){
         case Types.SET_AUDIO:
-        console.log(2)
             return {
-                ...state,display:"block"
+                ...state,display:action.payload
             }
         
     }

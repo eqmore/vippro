@@ -1,8 +1,8 @@
 import * as Types from '../action-types';
 
 let actions ={
-    playaudio(src){
-        return {type:Types.SET_AUDIO,src};
+    playaudio(payload){
+        return {type:Types.SET_AUDIO,payload};
     }
 }
 

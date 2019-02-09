@@ -8,13 +8,16 @@ import {connect} from 'react-redux';
 
 class Sectwo extends Component {
     play= () =>{
-        console.log(this.props)
-        var screenHeight=document.documentElement.clientHeight;
-		var screenWidth=document.documentElement.clientWidth;
-		var body=document.getElementsByTagName('body')[0];
-		body.style.width=screenWidth+"px";
-        body.style.height=screenHeight+"px";
-        this.props.playaudio();
+        // console.log(this.props)
+        // var screenHeight=window.innerHeight;//document.documentElement.clientHeight;
+        // var screenWidth=window.innerWidth;//document.documentElement.clientWidth;
+        // // var body=document.getElementsByTagName("body")[0];
+        // var body=document.getElementsByClassName('fullvideo')[0];
+        // // var body=document.getElementById("root");
+		// body.style.width=screenWidth+"px";
+        // body.style.height=screenHeight+"px";
+        // console.log(body);
+        this.props.playaudio("block");
         
     }
     render() {

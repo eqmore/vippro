@@ -8,16 +8,19 @@ import Classlist from './containers/classlist/Classlist.js';
 
 import * as serviceWorker from './serviceWorker';
 
+import {Provider} from 'react-redux';
+import store from './store';
 
 
 ReactDOM.render(<App>
-    <Router>
-        <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/classlist' component={Classlist} />
-        </Switch>
-    </Router>
-
+    <Provider store={store}>
+        <Router>
+            <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/classlist' component={Classlist} />
+            </Switch>
+        </Router>
+    </Provider>
 </App>
     , document.getElementById('root'));
 

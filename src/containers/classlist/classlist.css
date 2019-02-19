@@ -1,0 +1,135 @@
+@import '../../common/css/reset.css';
+.ovh {
+  overflow: hidden;
+  display: block;
+}
+/**- public -**/
+li {
+  list-style-type: none;
+}
+.search-all {
+  margin-top: 90px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-all .search-criteria {
+  margin-top: 40px;
+}
+.search-all .search-criteria ul {
+  *zoom: 1;
+  clear: both;
+  border: solid 1px #999;
+  border-radius: 4px;
+}
+.search-all .search-criteria ul:before,
+.search-all .search-criteria ul:after {
+  display: table;
+  content: "";
+}
+.search-all .search-criteria ul:after {
+  clear: both;
+}
+.search-all .search-criteria ul .choose-type {
+  color: '#f85415';
+}
+.search-all .search-criteria ul li {
+  list-style-type: none;
+  padding: 10px;
+  float: left;
+  display: block;
+}
+.search-all .search-criteria ul li .span {
+  font-size: 16px;
+  display: inline-block;
+  width: 54px;
+}
+.search-all .search-criteria ul li i {
+  font-style: normal;
+}
+.search-all .search-criteria ul li:first-child {
+  width: 174px;
+  border-right: solid 1px #999;
+}
+.search-all .search-detail {
+  position: relative;
+  margin-top: 35px;
+  width: 100%;
+  min-height: 250px;
+}
+.search-all .search-detail ul li {
+  padding: 35px 30px;
+  margin-top: 35px;
+  position: relative;
+  *zoom: 1;
+  clear: both;
+}
+.search-all .search-detail ul li:before,
+.search-all .search-detail ul li:after {
+  display: table;
+  content: "";
+}
+.search-all .search-detail ul li:after {
+  clear: both;
+}
+.search-all .search-detail ul li .pic {
+  position: absolute;
+  width: 350px;
+}
+.search-all .search-detail ul li .pic img {
+  width: 100%;
+}
+.search-all .search-detail ul li .content {
+  padding-left: 380px;
+}
+.search-all .search-detail ul li .content h2 {
+  font-size: 26px;
+  color: #333;
+  font-weight: 400;
+  padding-bottom: 15px;
+  margin: 0 0;
+}
+.search-all .search-detail ul li .content .sub-title {
+  *zoom: 1;
+  clear: both;
+}
+.search-all .search-detail ul li .content .sub-title:before,
+.search-all .search-detail ul li .content .sub-title:after {
+  display: table;
+  content: "";
+}
+.search-all .search-detail ul li .content .sub-title:after {
+  clear: both;
+}
+.search-all .search-detail ul li .content .sub-title span {
+  padding-right: 24px;
+  font-size: 16px;
+}
+.search-all .search-detail ul li .content .sub-title span img {
+  width: 24px;
+  height: 24px;
+}
+.search-all .search-detail ul li .content p {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #999;
+  line-height: 22px;
+}
+.search-all .search-detail ul li .decorate {
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 76px;
+}
+.search-all .foot {
+  bottom: 0;
+  left: 0;
+  padding-left: 410px;
+  position: absolute;
+  width: 100%;
+  font-size: 18px;
+}
+.search-all .foot img {
+  width: 22px;
+  height: 22px;
+}

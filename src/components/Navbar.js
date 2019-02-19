@@ -22,7 +22,8 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <Router>
+            <div>
+            <div className="head100">
             <div className="center nav-title clearfix">
             <div className="ipad-header" style={{marginLeft:this.state.leftmenu?"310px":0}}>
                 <div className="btn" onClick={this.threeClick}>
@@ -108,7 +109,8 @@ class Navbar extends Component {
                 </ul>
             </div>
             </div>
-            </Router>
+            </div>
+            </div>
         );
     }
 }

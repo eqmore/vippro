@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    hash可以用来通信
+    a b 同域 3000
+    c 4000
+    a 获取c 数据
+    a 给 c 传hash c 收到 hash后 把hash 传给b b将结果传给a 的 hash
+    <iframe src="http://localhost:4000/c.html#iloveu" frameborder="0"
+    
+    ></iframe>
+    <script>
+        window.onhashchange = function(){
+            console.log(location.hash);
+        }
+    </script>
+</body>
+</html>

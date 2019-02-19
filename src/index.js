@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Route ,BrowserRouter as Router,Switch} from 'react-router-dom';
@@ -12,16 +13,23 @@ import {Provider} from 'react-redux';
 import store from './store';
 
 
-ReactDOM.render(<App>
+
+
+ReactDOM.render(
     <Provider store={store}>
         <Router>
-            <Switch>
-                <Route path='/' exact component={Home} />
-                <Route path='/classlist' component={Classlist} />
-            </Switch>
+            <App>
+                    <Switch>
+                        <Route path='/' exact component={Home} />
+                        <Route path='/classlist' component={Classlist} />
+                        {/* <Route exact path="/" render={()=>(<div>home</div>)} />
+                        <Route exact path="/classlist" render={()=>(<div>list</div>)} /> */}
+                    </Switch>
+                
+            </App>
         </Router>
     </Provider>
-</App>
+
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

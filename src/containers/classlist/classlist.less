@@ -1,0 +1,130 @@
+@import '../../common/css/public.less';
+@import '../../common/css/reset.css';
+@c:'#f85415';
+li{
+    list-style-type: none;
+}
+.search-all{
+    margin-top: 90px;
+    .w(1024);
+    .mc();
+
+        
+    .search-criteria{
+        .mt(40);
+        // .time{
+            ul{
+                .clear();
+                border:solid 1px #999;
+                border-radius:4px;
+                .choose-type{
+                    .c(@c);
+                }
+                li{
+                    
+                    list-style-type: none;
+                    padding:10px;
+                    .fl();
+                    .span{
+                        .fs(16);
+                        display:inline-block;
+                        .w(54);
+                    }
+                    i{
+                        font-style: normal;
+                        
+
+                    }
+                }
+                li:first-child{
+                    .w(174);
+                    border-right:solid 1px #999;
+                }
+
+             }
+        //}
+
+       
+        
+    }
+
+    .search-detail{
+        .por();
+        .mt(35);
+        .w(100%);
+        min-height: 250px;
+        ul{
+            li{
+                padding:35px 30px;
+                .mt(35);
+                .por();
+                .clear();
+                .pic{
+                    .poa();
+                    .w(350);
+                    img{
+                        
+                        .w(100%);
+                    }
+                    
+                    
+                }
+                .content{
+                    .pl(380);
+                    h2{
+                        .fs(26);
+                        .c(#333);
+                        font-weight: 400;
+                        .pb(15);
+                        margin:0 0;
+                    }
+                    .sub-title{
+                        .clear();
+                        span{
+                            .pr(24);
+                            .fs(16);
+                            img{
+                                .w(24);
+                                .h(24);
+                            }
+                        }
+                        
+                    }
+            
+                    p{
+                        padding: 10px 0;
+                        .fs(12);
+                        .c(#999);
+                        line-height: 22px;
+                    }
+            
+                   
+                }
+
+                .decorate{
+                    .poa();
+                    left:-7px;
+                    top:4px;
+                    .w(76);
+                }
+            
+            }
+            
+            
+        }
+        
+    }
+
+    .foot{
+        bottom:0;
+        left:0;
+        .pl(410);
+        .poa();
+        .w(100%);
+        .fs(18);
+        img{
+            .w(22);
+            .h(22);
+        }
+    }
+}

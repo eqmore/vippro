@@ -21,6 +21,7 @@ class Sectwo extends Component {
         
     }
     render() {
+        console.log(this.props);
         return (
             <div className="sectwo center">
             {/* <div className="box1"></div> */}

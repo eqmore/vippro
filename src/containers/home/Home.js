@@ -8,6 +8,13 @@ import Botm from '../../components/Botm';
 
 import {connect} from 'react-redux';
 import actions from '../../store/action/home.js';
+import Loading from '../../components/Loading';
+import {Loadable} from 'react-loadable';
+
+// const LoadableComponent = Loadable({
+//     loader: () => import('../../components/Swiper'),
+//     loading: Loading,
+//   })
 
 
 
@@ -24,13 +31,16 @@ class Home extends React.Component{
     render(){
         console.log(this.props);
         return (
+            
             <div style={{marginTop:"90px"}}>
+                
                 {
-                    this.props.lists.length===0?null: <Carousel lists={this.props.lists} i={0}/>
+                    this.props.lists.length===0?<Loading/>: <Carousel lists={this.props.lists} i={0}/>
                 }
+                {/* <LoadableComponent/> */}
              
               <Sectwo />
-              <FullVideo />
+              {/* <FullVideo /> */}
               {/* <Botm /> */}
             </div>
         )

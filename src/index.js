@@ -13,20 +13,25 @@ import {Provider} from 'react-redux';
 import store from './store';
 
 
+import Try from './containers/routertry/Try';
+import ScrollToTop from './components/ScrollToTop';
 
 
 ReactDOM.render(
     <Provider store={store}>
         <Router>
+        <ScrollToTop>
             <App>
                     <Switch>
                         <Route path='/' exact component={Home} />
                         <Route path='/classlist' component={Classlist} />
+                        <Route path='/try' component={Try} />
                         {/* <Route exact path="/" render={()=>(<div>home</div>)} />
                         <Route exact path="/classlist" render={()=>(<div>list</div>)} /> */}
                     </Switch>
                 
             </App>
+            </ScrollToTop>
         </Router>
     </Provider>
 

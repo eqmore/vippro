@@ -74,7 +74,7 @@ class Navbar extends Component {
                         <Link to={'/down'}>下载中心</Link>
                     </li>
                     <li>
-                        <Link to={'/new'}>最新动态</Link>
+                        <Link to={'/try'}>最新动态</Link>
                     </li>
                 </ul>
                 <div className="login">

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <div></div>
+    <script>
+    let tablist = document.querySelectorAll('button');
+    for(var i=0;i<tablist.length;i++){
+        tablist[i].onclick = function(){
+        //自执行函数形成一个私有作用域（不释放：返回的函数堆地址被外面的事件占用）
+            document.querySelector('div').innerHTML=i;
+        }
+    
+
+    /* tablist[i].onclick = function(n){
+        var i = n;
+        //自执行函数形成一个私有作用域（不释放：返回的函数堆地址被外面的事件占用）
+        return function(){
+            document.querySelector('div').innerHTML=i;
+        }
+    }(i) */
+    /* tablist[i].index = i;
+    tablist[i].onclick = function(){
+        document.querySelector('div').innerHTML = this.index;
+        //给当前元素的某个事件绑定方法，方法执行的时候方法中的this是当前操作的对象
+    } */
+
+    }
+
+    for(let i=0;i<tablist.length;i++){
+        tablist[i].onclick = function(){
+            document.querySelector('div').innerHTML = i;
+        }
+    }
+    //循环体也是块级作用域，初始值设置的变量是本次块级作用域中的变量（形成了length个块级作用域，每个
+    // 块级作用域中都有一个私有变量i,变量值就是每次循环i的值
+    
+    </script>
+</body>
+</html>

@@ -26,7 +26,7 @@ function fn(ary){
     }
  */
 
- var a = 12;
+ /* var a = 12;
  function fn(){
      console.log(arguments.callee,arguments.callee.caller);
      console.log(a);//12
@@ -37,4 +37,5 @@ function fn(ary){
      fn();
  }
  sum();
- fn();
+ fn(); */
+

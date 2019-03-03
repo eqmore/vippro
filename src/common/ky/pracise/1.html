@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start">start</div>
+    <div class="remove">remove</div>
+    <div id="foo\bar">foobar</div>
+    <script>
+
+    console.log('#foo\\bar')              // "#foo\bar"
+  console.log('#foo\\\\bar')            // "#foo\\bar"
+    console.log(document.querySelector('#foo\\\\bar'))
+  class Test{
+        constructor(){
+            this.count = 0;
+            this.timer ;
+            //queryselector返回匹配的第一个
+            //由于 JavaScript 中，反斜杠是转义字符，
+            //所以当你输入一个文本串时，你必须将它转义两次（一次是为 JavaScript 字符串转义，另一次是为 querySelector 转义）：
+            document.querySelector('.start').addEventListener('click',this.startCount);
+            document.querySelector('.remove').addEventListener('click',()=>{
+                if(this.timer){clearInterval(this.timer)};
+                document.querySelector('.start').removeEventListener('click',this.startCount);
+                //bind会返回新的function,不是同一个地址了
+            })
+        }
+        startCount(){//箭头函数的this，不是箭头函数
+            //箭头函数内部的this是词法作用域，由上下文确定
+            //所以，用call()或者apply()调用箭头函数时，无法对this进行绑定，即传入的第一个参数被忽略：
+
+            console.log(this.startCount.bind(this));
+            this.timer = setInterval(()=>{
+                this.count++;
+                // console.log(this.count);
+            },100)
+        }
+    }
+    const test = new Test();
+    </script>
+</body>
+</html>

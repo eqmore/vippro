@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  function SuperType() {
+      this.colors = ["red","blue","green"];  //构造函数属性（实例属性），会被实例共享，但不会被修改
+  }
+ 
+ function SubType() {
+ }
+ 
+ //继承了SuperType
+ SubType.prototype = new SuperType();    /*原先的实例属性也就顺理成章地变成了现在的原型属性*/
+ 
+ var instance1 = new SubType(); /* instance1.colors = ["red","blue","green","black"]; 这种方式是给instance1新添加的属性，覆盖了原型colors，而不是修改了原型colors. */
+ instance1.colors.push("black");
+ console.log(instance1.colors);   //"red,blue,green,black"
+ 
+ var instance2 = new SubType();
+ console.log(instance2.colors);   //"red,blue,green,black" Super中的实例属性也变成可以被改写的，不理想
+    </script>
+</body>
+</html>

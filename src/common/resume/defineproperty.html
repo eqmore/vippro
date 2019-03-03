@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let obj ={b:'1'};
+    console.log(obj);
+    let value;
+    let obj1=Object.defineProperty(obj,"c",{
+        enumerable:true,
+        configurable:true,
+        get(){
+            console.log('get');
+            return value;
+        },
+        set(newval){
+            console.log('set');
+            value=newval;
+        }
+    })
+    let vb;
+    Object.defineProperty(obj,"b",{
+        enumerable:true,
+        configurable:true,
+        get(){
+            console.log('get');
+            return vb;
+        },
+        set(newval){
+            console.log('set');
+            vb=newval;
+        }
+    })
+    
+    console.log(obj1);
+    </script>
+</body>
+</html>

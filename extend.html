@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义一个动物类
+    function Animal (name) {
+        var a=name;
+    // 属性
+    this.name = name || 'Animal';
+    // 实例方法 特权方法 和 eat 一样被实例调用 区别是eat 不能访问 a
+    this.sleep = function(){
+        console.log(this.name + '正在睡觉！');
+    }
+    
+    }
+    // 原型方法
+    Animal.prototype.eat = function(food) {
+    console.log(this.name + '正在吃：' + food);
+    };
+
+    function Cat(){ 
+    }
+    Cat.prototype = new Animal();//原型链继承
+    Cat.prototype.name = 'cat';
+
+    //　Test Code
+    var cat = new Cat();
+    // console.log(cat.name);
+    // console.log(cat.eat('fish'));
+    console.log(cat.sleep());
+    // console.log(cat instanceof Animal); //true 
+    // console.log(cat instanceof Cat); //true
+    console.dir(Animal);
+    console.dir(cat);
+
+    let animal = new Animal();
+    animal.sleep();
+
+
+    function a(){
+
+    }
+    let a1 =new a();
+    console.log(a1);
+
+
+//     6、寄生组合继承
+// 核心：通过寄生方式，砍掉父类的实例属性，这样，在调用两次父类的构造的时候，就不会初始化两次实例方法/属性，避免的组合继承的缺点
+
+function Cat(name){
+  Animal.call(this);
+  this.name = name || 'Tom';
+}
+(function(){
+  // 创建一个没有实例方法的类
+  var Super = function(){};
+  Super.prototype = Animal.prototype;
+  //将实例作为子类的原型
+  Cat.prototype = new Super();
+  Cat.prototype.constructor = Cat;
+})();
+
+// Test Code
+var cat = new Cat();
+console.log(cat.name);
+console.log(cat.sleep());
+console.log(cat instanceof Animal); // true
+console.log(cat instanceof Cat); //true
+    </script>
+</body>
+</html>

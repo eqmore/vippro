@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:100px;height: 100px;background:red;position: absolute;"></div>
+    <script>
+        let div = document.querySelector("div");
+        let disX;
+        let disY;
+        function down(ev){
+            disX = ev.pageX-div.offsetLeft;
+            disY = ev.pageY - div.offsetTop;
+            document.addEventListener("mousemove",move);
+            document.addEventListener("mouseup",up);
+        }
+        function move(ev){
+            div.style.left=(ev.pageX-disX)+"px";
+            div.style.top = (ev.pageY -disY)+"px";
+            console.log(disX,ev.pageX);
+        }
+        function up(ev){
+            console.log('up');
+            document.removeEventListener("mousemove",move);
+            document.removeEventListener("mouseup",up);
+        }
+        div.addEventListener("mousedown",down);
+    </script>
+</body>
+</html>

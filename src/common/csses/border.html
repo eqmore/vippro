@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .tri{
+        width: 0;
+        height: 0;
+        border: 50px solid;
+        border-color: red transparent transparent;
+
+    }
+    .triborder-outer{
+        width: 0;
+        height: 0;
+        border: 50px solid;
+        border-color: transparent transparent transparent green;
+        position: relative;
+    }
+    .triborder{
+        position: absolute;
+        top: -48px;
+        left: -49px;
+        width: 0;
+        height: 0;
+        border: 48px solid;
+        border-color: transparent transparent transparent yellow;
+        box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    }
+    .halftri{
+        width: 0;
+        height: 0;
+        border: 25px solid;
+        border-color: red red transparent transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class="tri"></div>
+    <div class="triborder-outer">    
+        <div class="triborder"></div>
+    </div>
+    <div class="halftri"></div>
+</body>
+</html>

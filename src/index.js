@@ -1,8 +1,8 @@
 import "babel-polyfill";
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import {Route ,BrowserRouter as Router,Switch} from 'react-router-dom';
-import {Route,Router} from './common/ky/router/react-router-dom';
+import {Route ,BrowserRouter as Router,Switch} from 'react-router-dom';
+// import {Route,Router} from './common/ky/router/react-router-dom';
 
 import App from './containers/App';
 import Home from './containers/home/Home';
@@ -17,15 +17,18 @@ import store from './store';
 import Try from './containers/routertry/Try';
 import ScrollToTop from './components/ScrollToTop';
 
-/* 
+import Pull from './containers/pull/Pull';
+
+
 ReactDOM.render(
     <Provider store={store}>
         <Router>
         <ScrollToTop>
             <App>
                     <Switch>
-                        <Route path='/' exact component={Home} />
+                        <Route path='/' exact component={Pull} />
                         <Route path='/classlist' component={Classlist} />
+                        <Route path='/pull' component={Home} />
                         <Route path='/try' component={Try} />
                     </Switch>
                 
@@ -34,8 +37,8 @@ ReactDOM.render(
         </Router>
     </Provider>
 
-    , document.getElementById('root')); */
-function Home1(){
+    , document.getElementById('root')); 
+/* function Home1(){
     return (<div>home</div>)
 }
 function List1(){
@@ -43,7 +46,7 @@ function List1(){
 }
     ReactDOM.render(<Router><Route path='/' exact component={Home1}/>
                             <Route path='/list' exact component={List1}/>
-            </Router>,window.root);
+            </Router>,window.root); */
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

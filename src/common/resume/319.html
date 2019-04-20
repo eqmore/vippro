@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function fbnq(n){
+        if(n===1) return  0;
+        if(n===2) return 1;
+        if(n>2){
+            return fbnq(n-2)+ fbnq(n-1);
+        }
+
+    }
+
+    Array.prototype.push2 = function(){
+        this.splice.apply(this, [this.length, 0].concat(Array.prototype.slice.apply(arguments)));
+        // console.log(Array.prototype.slice.apply(arguments),arguments);
+        // console.log([1].concat(arguments));
+        return this.length;
+    }
+    let arr = [1,2];
+    arr.push2(3);
+
+    let obj = {
+    '1': 'a',
+    '2': 'b',
+    length: 2
+    };
+
+    Array.prototype.push.call(obj, 'c');
+
+    console.log(obj); 
+    
+    </script>
+</body>
+</html>

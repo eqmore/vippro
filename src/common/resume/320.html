@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function CodingMan(name){
+        function man(name){
+            setTimeout(function(){
+                console.log(`hi,this is ${name}`);
+
+            })
+        }
+        man.prototype.eat = function (sth){
+            setTimeout(() => {
+                console.log(`eat ${sth}`);
+
+            });
+        return this;
+
+        }
+        man.prototype.sleep = function (time){
+            let start = Date.now();
+            setTimeout(function(){
+                while(Date.now() - start<time*1000){}
+
+                console.log(`wake up after ${time}`);
+            })
+            return this;
+
+        }
+        man.prototype.sleepFirst = function (time){
+            let start = Date.now();
+            while(Date.now() - start<time*1000){}
+            console.log(`wake up after ${time}`);
+            return this;
+        }
+
+        return new man(name);
+
+    }
+    
+    // CodingMan("peter");
+    CodingMan("peter").sleep(3).eat('dinner');
+    // CodingMan("peter").eat('supper').eat('dinner');
+    // CodingMan("peter").sleepFirst(1).eat('dinner');
+
+    </script>
+</body>
+</html>

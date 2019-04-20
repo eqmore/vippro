@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red blue">aspx</div>
+    <div class="blue red">pxas</div>
+    <script>
+       function Speaker(msg){
+            this.msg =msg;
+            this.show = function (){
+                alert(this.msg);
+            }
+            this.notify = function(){
+                setTimeout(function(){
+                    this.show();
+                },1000);
+            }
+       } 
+       let s = new Speaker('msg');
+       s.notify();
+    </script>
+    <script>
+    for(var i=0;i<5;i++){
+        setTimeout(function(){
+            console.log(new Date,i);
+        },1000)
+    }
+    console.log(new Date,i);
+
+    
+    
+    let {b:a,a:b}={a:3,b:4};
+    console.log(b,a);
+
+    
+    </script>
+</body>
+</html>

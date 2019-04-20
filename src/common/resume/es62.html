@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function update(){
+            console.log('update');
+        }
+    let arr=[1,2,3];
+    //proxy可以监控到数组的变化 和对象的变化
+    let proxy = new Proxy(arr,{
+        set(target,key,value){
+            //不要手动操作原数组，push pop时key出现问题
+            update();
+            return Reflect.set(target,key,value);
+            // update();
+            // target[key]=value;
+        },
+        get(target,key){
+            return Reflect.get(target,key);
+            // return target[key];
+        }
+    })
+
+    //数组的方法 es5 forEach reduce 收敛 map filter some every
+    //es6 find findindex
+    //es7 includes
+    //搬瓦工
+    let r =[{price:100,count:1},{price:200,count:1}];
+    r.reduce((a,b)=>{return a+b.price*b.count;},0)
+
+    let keys =['name','age'];
+    let values =['jw',18];
+    let obj = keys.reduce((a,b,index,current)=>{
+        a[b] = value[index];
+        return a;
+    },{})
+
+    //reduce redux compose
+    function sum(a,b){
+        return a+b;
+    }
+    function toUpper(str){
+        return str.toUpperCase();
+    }
+    function toLen(str){
+        return str.length;
+    }
+    toLen(toUpper(sum('z','jw')));
+    compose(add,toUpper,sum)('z','js');
+
+    function compose(...fns){
+        return function(...args){
+            let lastFn = fns.pop();
+            return fns.reduceRight((a,b)=>{
+                return b(a)
+            },lastFn(...args))
+        }
+    }
+
+    function compose(...fns){
+        return fns.reduce((a,b)=>{
+            return (...args)=>{
+                return a(b(...args))
+            }
+        })
+    }
+
+    Array.prototype.reduce = function(callback,prev){
+        for(let i =0;i<this.length;i++){
+            if(prev == undefined){
+               prev = callback(this[i],this[i+1],i+1,this)
+               i++;
+            }else{
+                prev = callback(prev,this[i],i,this);
+            }
+
+        }
+        return prev;
+        
+    }
+
+    //map 映射 filter some every
+    //map返回新数组
+    //filter
+    //some
+    //every看看有没有!=
+    //find 返回找到的哪一项 没有返回undefined
+
+    //继承
+    call
+    tiger.prototype.__proto__ = animal.prototype;//ie没
+    Object.setPrototypeOf(Tiger.prototype,Animal.prototype) //es7
+
+    tiger.prototype = Object.create(Animal.prototype,{constructor:{value:tiger}});//es5
+    function create(parentPrototype){
+        let Fn =function(){}
+        Fn.prototype = parentPrototype;
+        return new Fn();
+    }
+
+    //class
+
+    //类不能当作函数调用
+
+    //es7支持静态属性 es6只支持静态方法
+    </script>
+</body>
+</html>

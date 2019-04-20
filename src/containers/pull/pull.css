@@ -1,0 +1,8 @@
+ul{
+    position: relative;
+}
+ul li{
+    width: 178px;
+    position: absolute;
+    transition: 1s;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="height:10000px">
+    <input type="text" value="" />
+    <script>
+        //节流是持续发生事件时，保证事件处理函数间隔一定事件触发一次
+
+        function throttle(fn,delay){
+            let canrun = true;
+            return function(){
+                if(!canrun) return ;
+                canrun = false;
+                setTimeout(function(){
+                    fn();
+                    canrun = true;
+                },1000)
+            }
+        }
+
+        function a(){
+            console.log('a');
+        }
+
+        // window.onscroll = throttle(a,1000);
+
+        window.onscroll =throttle(a,1000);
+    </script>
+    <script>
+    function debounce(fn,delay){
+        let timer;
+        return function(){
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                fn();
+            },1000)
+        }
+    }
+    function b(){
+        console.log('b');
+
+    }
+    let iput = document.getElementsByTagName('input')[0];
+    iput.oninput = debounce(b,1000);
+    </script>
+</body>
+</html>

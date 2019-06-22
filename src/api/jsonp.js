@@ -28,7 +28,7 @@ function jsonp(obj){
             delete window[fnName];
             window.onOff = false;
             resolve(data);
-            console.dir(window);
+            // console.dir(window);
         }
         
 
